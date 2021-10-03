@@ -1,23 +1,54 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="results-page.css">
+<link rel="stylesheet" href="../style.css">
 <html>
     <body>
-        <div id="map">
-            <img src="assets/coffee_map_westdale.PNG" alt="Westdale map"
-        </div>
-        <div>
+        <div class="container">
             <table>
+                <!--Table with information about coffee shops shown in the map-->
                 <tr>
                     <th>Name</th>
                     <th>Google Rating</th>
                     <th>User Rating</th>
-                    <th>Menu</th>
                 </tr>
                 <tr>
-                    <td>Mikel Coffee</td>
-                    <td>4.5</td>
+                    <!--Each coffe shop name will link to the about section on our website for that location-->
+                    <td>
+                        <a href="https://www.mikelcoffee.com/el/home"> Mikel Coffee</a>
+                    </td>
+                    <td>
+                        <div class="Stars" style="--rating: 4.5;" aria-label = "This coffee shop has a rating of 4.5 on Google">
+                    </td>
+                    <td>
+                        <div class="Stars" style="--rating: 4;" aria-label="This coffee shop has a user rating of 4">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://paisleycoffeehouse.com/">Paisley Coffeehouse and Eatery</a> 
+                    </td>
+                    <td>
+                        <div class="Stars" style="--rating: 4.4;" aria-label="This coffee shop has a rating of 4.4 on Google">
+                    </td>
+                    <td>
+                        <div class="Stars" style="--rating: 4.9;" aria-label="This coffee shop has a user rating of 4.9">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://secondcup.com/">Second Cup</a> 
+                    </td>
+                    <td>
+                        <div class="Stars" style="--rating: 4.2;" aria-label="This coffee shop has a rating of 4.2 on Google">
+                    </td>
+                    <td>
+                        <div class="Stars" style="--rating: 3.4;" aria-label="This coffee shop has a user rating of 3.4">
+                    </td>
                 </tr>
             </table>
+                <div class="map">
+                    <img src="assets/coffee_map_westdale.PNG" aria-label="Westdale map">
+                </div>
         </div>
     </body>
 </html>
