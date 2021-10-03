@@ -5,8 +5,9 @@
 }
 
 .topnav {
-  background-color: #b1b0ae;
+  background-color: #345995;
   overflow: hidden;
+  border-radius: 5px;
 }
 
 .topnav a {
@@ -19,8 +20,13 @@
 }
 
 .topnav a:hover {
-  background-color: #b1b0ae;
-  color: #54442b;
+  background-color: #EEF8FC;
+  color: black;
+}
+
+.topnav a.active {
+    background-color: #8ACDEA;
+    color: black;
 }
 
 .container {
