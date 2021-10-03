@@ -1,45 +1,69 @@
 :root {
-    --star-size: 40px;
-    --star-color: #b1b0ae;
-    --star-background: #54442B;
+  --star-size: 40px;
+  --star-color: #b1b0ae;
+  --star-background: #54442b;
+}
+
+.topnav {
+  background-color: #b1b0ae;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #b1b0ae;
+  color: #54442b;
 }
 
 .container {
-    width: auto;
-    background: #FFF;
-    margin: 0 auto;
-    box-shadow: 0px 15px 16px 0.15px rgba(0,0,0,0.05);
-    border-radius: 20px;
+  width: auto;
+  background: #fff;
+  margin: 0 auto;
+  box-shadow: 0px 15px 16px 0.15px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-img{
-    display: block;
-    margin: 0 auto;
-    border-radius: 20px;
+img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
 }
 
 .map {
-    object-fit: fill;
-    border-radius: 20px;
+  object-fit: fill;
+  border-radius: 20px;
 }
 
 /*This method for static stars in html and css was found at https://css-tricks.com/five-methods-for-five-star-ratings/ */
 .Stars {
-    --percent: calc(var(--rating) / 5 * 100%);
-    display: inline-block;
-    font-size: var(--star-size);
-    font-family: Times;
-    line-height: 1;
+  --percent: calc(var(--rating) / 5 * 100%);
+  display: inline-block;
+  font-size: var(--star-size);
+  font-family: Times;
+  line-height: 1;
 }
 .Stars::before {
-        content: '\2605\2605\2605\2605\2605';
-        letter-spacing: 3px;
-        background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+  content: "\2605\2605\2605\2605\2605";
+  letter-spacing: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--star-background) var(--percent),
+    var(--star-color) var(--percent)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
