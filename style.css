@@ -90,12 +90,6 @@ img {
   border-radius: 20px;
 }
 
-.bar_image {
-  background-size: cover;
-  height: 20%;
-  padding-top: 10%;
-}
-
 .map {
   object-fit: fill;
   border-radius: 20px;
