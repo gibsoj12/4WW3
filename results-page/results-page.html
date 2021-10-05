@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="results-page.css">
-<link rel="stylesheet" href="../style.css">
+    <head>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+        <link rel="stylesheet" href="results-page.css">
+        <link rel="stylesheet" href="../style.css">
+        <style>
+            .jumbotron {
+              background-color: #345995;
+              color: #fff;
+              border-radius: 5px;
+              margin-bottom: 1%;
+            }
+            </style>
+
+        <title>Results</title>
+        <meta name="author" content="Jeff Gibson">
+    </head>
+
     <body>
-        <div class="topnav"> 
-            <a class="#home" href="../index.html">Home</a>
-            <a href="#about">Add a Location</a>
-            <a href="user-registration-page/user-registration-page.html" style="float: right;">Sign in</a>
-            <a href="user-registration-page/user-registration-page.html" style="float: right;">Sign up</a>
-          </div>
+
+        <div class="jumbotron text-center">
+            <h1>CoffeeHaus</h1>
+            <div class="topnav"> 
+                <a class="#home" href="../index.html">Home</a>
+                <a href="#about">Add a Location</a>
+                <a href="user-registration-page/user-registration-page.html" style="float: right;">Sign in</a>
+                <a href="user-registration-page/user-registration-page.html" style="float: right;">Sign up</a>
+              </div>
+        </div>
+
         <div>
             <table>
                 <!--Table with information about coffee shops shown in the map-->
@@ -58,5 +82,7 @@
                     <img src="assets/coffee_map_westdale.PNG" aria-label="Westdale map">
                 </div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
     </body>
 </html>
+

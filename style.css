@@ -5,7 +5,7 @@
 }
 
 .topnav {
-  background-color: #345995;
+  background-color: #3e66a5;
   overflow: hidden;
   border-radius: 5px;
 }
@@ -119,4 +119,9 @@ img {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+h1 {
+  padding: 10%;
+  text-align: center;
 }
