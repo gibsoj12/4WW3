@@ -7,6 +7,7 @@
 .topnav {
   background-color: #3e66a5;
   overflow: hidden;
+  margin-top: 0px !important;
   border-radius: 5px;
 }
 
@@ -122,6 +123,11 @@ img {
 }
 
 h1 {
+  font-size: 600%;
   padding: 10%;
   text-align: center;
+}
+
+.foot {
+  border-radius: 1%;
 }
