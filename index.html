@@ -1,28 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="style.css">
+  <head>
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .jumbotron {
+          background-image: url("../assets/pourover-home-coffee.jpg");
+          background-size: cover;
+          background-color: #345995;
+          color: #000;
+          border-radius: 5px;
+          margin-bottom: 1%;
+        }
+        </style>
+
+    <title>About Coffee Shop</title>
+    <meta name="author" content="Jessica de Leeuw">
+</head>
 
   <body>
-    <div class="topnav"> 
+    <div class="jumbotron text-center">
+      <h1></h1>
+      <div class="topnav"> 
         <a class="active" href="#home">Home</a>
-        <a href="#about">Add a Location</a>
+        <a href="object-submission-page/object-submission-page.html">Add a Location</a>
         <a href="user-registration-page/user-registration-page.html#signin" style="float: right;">Sign in</a>
         <a href="user-registration-page/user-registration-page.html#signup" style="float: right;">Sign up</a>
+      </div>
     </div>
-      
-    <div class="bar_image" style="background-image: url('assets/coffee-house-menu.jpg');">
-    </div>
+    
 
-    <div>
-      <form role="search" id="form">
-        <input type="search" id="query" name="q"
-               placeholder="Search..."
-               aria-label="Search through site content">
-          <button>
-            <svg viewBox="0 0 1024 1024"><path class="path1" d="assets/magnifying-glass.svg"></path></svg>
-          </button>
-      </form>
+    <div class="input-group">
+      <div class="form-outline">
+        <input type="search" id="form1" class="form-control" />
+        <label class="form-label" for="form1">Search</label>
+      </div>
+      <button type="button" class="btn btn-primary">
+        <i class="fas fa-search"></i>
+      </button>
     </div>
       
-  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+  </body>
+  
+  <footer>
+      <div class=" foot text-center p-3">
+          © 2021 Copyright
+      </div>
+  </footer>
 </html>
