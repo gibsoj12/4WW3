@@ -16,3 +16,15 @@
   flex-basis: 33.33%;
   float: left;
 }
+
+.column {
+    float: left;
+}
+
+.left, .right {
+    width: 15%;
+}
+
+.middle {
+    width: 70%;
+}
