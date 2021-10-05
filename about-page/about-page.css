@@ -1,18 +1,18 @@
 .about-rating {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .rating-header {
-    margin: auto;
-    flex-basis: 33.33%;
-    font-size: x-large;
-    font-weight: bold;
+  margin: auto;
+  flex-basis: 33.33%;
+  font-size: x-large;
+  font-weight: bold;
 }
 
 .stars-container {
-    margin: auto;
-    flex-basis: 33.33%;
-    float: left;
+  margin: auto;
+  flex-basis: 33.33%;
+  float: left;
 }
