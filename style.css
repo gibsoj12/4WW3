@@ -40,6 +40,21 @@ form {
   align-items: center;
 }
 
+.has-search, .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search, .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  text-align: center;
+  color: #aaa;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+}
+
 input {
   all: unset;
   font: 16px system-ui;
