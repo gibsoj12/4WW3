@@ -15,18 +15,3 @@
   margin: auto;
   flex-basis: 33.33%;
 }
-
-.column {
-    float: left;
-}
-
-.left, .right {
-    width: 50%;
-}
-
-/* Clear the floats after the columns */
-.clear {
-  content: "";
-  display: table;
-  clear: both;
-}
