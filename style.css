@@ -165,6 +165,16 @@ clear: both;
   color: #aaa;
 }
 
+.card {
+  height: 300px;
+  width: auto;
+  background: #fff;
+  margin: 0 auto;
+  padding-top: 5px;
+  text-align: center;
+  display: block;
+}
+
 .foot {
   border-radius: 1%;
 }
