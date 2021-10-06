@@ -136,6 +136,35 @@ h1 {
   text-align: center;
 }
 
+.column {
+  float: left;
+}
+
+.left, .right {
+  width: 50%;
+}
+
+/* Clear the floats after the columns */
+.clear {
+content: "";
+display: table;
+clear: both;
+}
+
+.has-search, .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search, .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  text-align: center;
+  color: #aaa;
+}
+
 .foot {
   border-radius: 1%;
 }
