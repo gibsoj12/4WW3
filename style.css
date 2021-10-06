@@ -1,5 +1,4 @@
 :root {
-  --star-size: 40px;
   --star-color: #b1b0ae;
   --star-background: #54442b;
 }
@@ -99,13 +98,13 @@ img {
 .Stars {
   --percent: calc(var(--rating) / 5 * 100%);
   display: inline-block;
-  font-size: var(--star-size);
+  font-size: 150%;
   font-family: Times;
   line-height: 1;
 }
 .Stars::before {
   content: "\2605\2605\2605\2605\2605";
-  letter-spacing: 3px;
+  letter-spacing: 0.5%;
   background: linear-gradient(
     90deg,
     var(--star-background) var(--percent),

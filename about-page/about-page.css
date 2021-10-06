@@ -2,19 +2,18 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  margin: auto;
 }
 
 .rating-header {
   margin: auto;
-  flex-basis: 33.33%;
-  font-size: x-large;
+  font-size: 200%;
   font-weight: bold;
 }
 
 .stars-container {
   margin: auto;
   flex-basis: 33.33%;
-  float: left;
 }
 
 .column {
@@ -22,9 +21,12 @@
 }
 
 .left, .right {
-    width: 15%;
+    width: 50%;
 }
 
-.middle {
-    width: 70%;
+/* Clear the floats after the columns */
+.clear {
+  content: "";
+  display: table;
+  clear: both;
 }
