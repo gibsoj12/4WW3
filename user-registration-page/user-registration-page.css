@@ -86,7 +86,7 @@ input {
 
 .form-submit {
   display: inline-block;
-  background: #8acdea;
+  background: #345995;
   color: #fff;
   border-bottom: none;
   width: auto;
@@ -97,7 +97,7 @@ input {
 }
 
 .form-submit:hover {
-  background: #345995;
+  background: #8acdea;
 }
 
 .form-button {
