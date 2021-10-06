@@ -40,28 +40,13 @@ form {
   align-items: center;
 }
 
-.has-search, .form-control {
-  padding-left: 2.375rem;
-}
-
-.has-search, .form-control-feedback {
-  position: absolute;
-  z-index: 2;
-  display: block;
-  text-align: center;
-  color: #aaa;
-  width: 2.375rem;
-  height: 2.375rem;
-  line-height: 2.375rem;
-}
-
 input {
   all: unset;
   font: 16px system-ui;
   color: black;
   height: 100%;
   width: 100%;
-  padding: 6px 10px;
+  padding: 10%;
 }
 
 ::placeholder {
@@ -140,6 +125,18 @@ h1 {
   float: left;
 }
 
+.row {
+  height: 300px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.block-text {
+  color: #fff;
+  font-size: 200%;
+  padding: 5%;
+}
+
 .left, .right {
   width: 50%;
 }
@@ -149,6 +146,16 @@ h1 {
 content: "";
 display: table;
 clear: both;
+}
+
+form {
+  background-color: #fff;
+  width: 300px;
+  height: 44px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .has-search, .form-control {
@@ -163,15 +170,6 @@ clear: both;
   height: 2.375rem;
   text-align: center;
   color: #aaa;
-}
-
-.card {
-  height: 300px;
-  width: auto;
-  background: #fff;
-  margin: 0 auto;
-  padding-top: 5px;
-  text-align: center;
 }
 
 .foot {
