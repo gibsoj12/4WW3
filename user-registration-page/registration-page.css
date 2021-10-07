@@ -1,0 +1,57 @@
+:root {
+    --star-color: #b1b0ae;
+    --star-background: #54442b;
+  }
+  
+  .topnav {
+    background-color: #3e66a5;
+    overflow: hidden;
+    margin-top: 0px !important;
+    border-radius: 5px;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #eef8fc;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #8acdea;
+    color: black;
+  }
+
+.container {
+    width: auto;
+    background: #fff;
+    margin: 0 auto;
+    box-shadow: 0px 15px 16px 0.15px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 5%;
+  }
+
+  .form-submit {
+    display: inline-block;
+    background: #345995;
+    color: #fff;
+    border-bottom: none;
+    width: auto;
+    padding: 15px 40px;
+    border-radius: 5px;
+    margin-top: 1%;
+    cursor: pointer;
+  }
+  
+  .form-submit:hover {
+    background: #8acdea;
+  }

@@ -1,0 +1,101 @@
+
+Terms of Service
+
+Last updated: Dec 14, 2020
+
+The following terms and conditions govern the use of all software (referred to collectively as the "Service" in this document) offered at MockFlow.com. The Service is offered subject to your acceptance without modification of all of the terms and conditions contained herein and all other operating rules, policies (including, without limitation, MockFlow's Privacy Policy) and procedures that may be published from time to time on this Site by the creator and owner of this software - A Produle Systems Pvt Limited.
+
+MockFlow reserves the right to update the TOS at any time. Your continued use of the service after such changes means that you agree to the revised terms even if you have not reviewed them. The most current version of the TOS is always available in this page. We will also provide our best efforts to notify registered users via email of any changes to this ToS and Privacy Policy.
+1. Acceptance of Terms
+
+Please read this Agreement carefully before accessing or using the Service. By accessing or using any part of the Service, you agree to become bound by the terms and conditions of this agreement. If you do not agree to all the terms and conditions of this agreement, then you may not access or use the service available at MockFlow. In consideration of your use of the Service, you represent that you are of legal age to form a binding agreement and are not a person barred under the laws of any applicable jurisdiction.
+2. Description of Service
+
+MockFlow provides a professional Design Suite for creative designers and UX engineers. At present, MockFlow provides free and paid plans with different levels of services and support. There is no time-restricted trial period, as the user may choose to upgrade/downgrade his/her account when desired.
+
+MockFlow does not claim ownership of the data and assets created using this service. The nature, content, intended creation and use of the service is the sole responsibility of the creator or company behind the project. MockFlow reserves the right to update, modify, enhance and transform the Service to any form and use.
+3. Usage Policy
+
+The service can only be accessed from servers owned or leased by MockFlow. Users need to register an account and accept these terms and other legal documents to use the service.
+
+You may not (and you may not permit anyone else to) copy, modify, create a derivative work of, reverse engineer, decompile or otherwise attempt to extract the source code of the Software, Services and Website or any part thereof owned or licensed by MockFlow, unless this is required by law.
+4. Bandwidth and Storage Policy
+
+MockFlow reserves the right to restrict a user/company's bandwidth usage and storage capacity of the Service either directly or indirectly including but not limited to the usage of the service . This is done in order to protect any disruptions to other users by conserving resources.
+5. Subscription Pricing and Payment Method
+
+Our order process is conducted by our online reseller Paddle.com. Paddle.com is the Merchant of Record for all of our orders. Paddle provides all customer service enquiries and handles returns. Your relationship with Paddle is governed by the following Terms and Conditions and Privacy Policy
+
+The paid plans are automatically charged based on their billing cycle unless the plan is unsubscribed which could be done anytime from your account settings.
+
+You agree to update your credit card information to keep it current at all times. All prices are given and must be paid in the currency listed. All payment obligations are non-cancelable and all amounts paid are nonrefundable. Unless otherwise provided by law or in connection with any particular service offer, all charges are non-refundable.
+6. Privacy and Personal Information
+
+For information about MockFlow's security practices, please read MockFlow's privacy policy at https://mockflow.com/privacy_policy. This policy explains how MockFlow treats your personal information, and protects your privacy, when you use the Services. You agree to the use of our software in accordance with MockFlow's privacy policies.
+7. Service Termination
+
+The terms will continue to apply until your access to the service is terminated. MockFlow may, at any time, terminate this Agreement in its sole discretion, including, without limitation, for breach by you of any of your representations, warranties or obligations under this Agreement, or for inactivity as it relates to the Service for a period of 60 days. You may, at any time, terminate your account by logging into the Service and cancelling the account from User Settings. MockFlow reserves the right, to terminate your Registered Admin or Regular Account at any time, including, without limitation, deactivating your Username.
+8. Proprietary rights
+
+You acknowledge and agree that MockFlow (or MockFlow's licensors) own all legal right, title, interest, technology in and to the Services, including any intellectual property rights which subsist in the Services (whether those rights happen to be registered or not, and wherever in the world those rights may exist). You further acknowledge that the Service may contain information which is designated confidential by MockFlow and that you shall not disclose such information without MockFlow's prior written consent.
+
+Unless you have agreed otherwise in writing with MockFlow, nothing in the Terms gives you a right to use any of MockFlow's trade names, trademarks, service marks, logos, domain names, and other distinctive brand features
+9. NO WARRANTIES
+
+YOU EXPRESSLY UNDERSTAND AND AGREE THAT YOUR USE OF THE SERVICES IS AT YOUR SOLE RISK AND THAT THE SERVICES ARE PROVIDED "AS IS" AND "AS" AVAILABLE.
+
+THE USAGE OF THE SERVICES, WEBSITE HAS NO WARRANTY. MOCKFLOW WILL TAKE NO RESPONSIBILITY FOR ANY LOSS, RISK OF ANY KIND OBTAINED THROUGH THE USAGE OF SERVICES. YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR OTHER DEVICE OR LOSS OF DATA THAT RESULTS FROM THE DOWNLOAD OF ANY MATERIAL FROM MOCKFLOW.
+10. LIMITATION OF LIABILITY
+
+IN NO EVENT MOCKFLOW BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL CONSEQUENTIAL OR EXEMPLARY DAMAGES WHICH MAY BE INCURRED BY YOU, HOWEVER CAUSED AND UNDER ANY THEORY OF LIABILITY. THIS SHALL INCLUDE, BUT NOT BE LIMITED TO, ANY LOSS OF PROFIT (WHETHER INCURRED DIRECTLY OR INDIRECTLY), ANY LOSS OF GOODWILL OR BUSINESS REPUTATION, ANY LOSS OF DATA SUFFERED, COST OF PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, OR OTHER INTANGIBLE LOSS.
+
+IT'S YOUR RESPONSIBILITY TO PERSONALLY BACKUP ANY CONTENT UPLOADED TO MOCKFLOW AND KEEP YOUR ACCOUNT DETAILS AND OTHER SENSITIVE INFORMATION SECURE AND CONFIDENTIAL.
+
+NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM MOCKFLOW OR THROUGH OR FROM THE SERVICES SHALL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THE TERMS. MOCKFLOW FURTHER EXPRESSLY DISCLAIMS ALL WARRANTIES AND CONDITIONS OF ANY KIND, WHETHER EXPRESS OR IMPLIED
+
+THE MOCKFLOW WEB SITE AND SERVICES MAY BE UNAVAILABLE FROM TIME TO TIME FOR MAINTENANCE OR OTHER REASONS. MOCKFLOW SHALL NOT BE LIABLE FOR ANY FAILURE INCLUDING THAT MAY RESULT BEYOND MOCKFLOW'S CONTROL INCLUDING BUT NOT LIMITED TO HARDWARE FAILURE, NATURAL CALAMITIES. MOCKFLOW WILL NOT BE LIABLE FOR ANY LOSS OR RETURN OF MATERIAL AND SERVICE DISRUPTION.
+
+MockFlow
+
+© 2021 Copyright. All rights reserved.
+
+MockFlow
+
+    Home
+    Pricing
+    Enterprise
+    Desktop
+    Integrations
+    For Education
+    MockStore
+
+Support
+
+    Blog - updates
+    Help center
+    Server status
+    Contact us
+
+Features
+
+    Wireframing
+    Collaboration
+    Strategy
+    Design Systems
+    Powerups
+
+Company
+
+    About us
+    Our Brand
+    Security
+    Privacy Policy
+    Terms of Service
+
+Send Mail
+     
+Mockflow Image
+Forgot Password ?
+OR
+google login
+Sign in with SSO
