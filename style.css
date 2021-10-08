@@ -87,10 +87,12 @@ img {
   display: block;
   margin: 0 auto;
   border-radius: 20px;
+  /* border-radius to round the edges and make it look nice */
   width: auto;
   height: auto;
   object-fit: fill;
   max-width: 100%;
+  /* without max-width the image would create side-scrolling issues */
 }
 
 .map {
@@ -142,6 +144,7 @@ h1 {
   padding: 5%;
 }
 
+/* Two column style */
 .left, .right {
   width: 50%;
 }
