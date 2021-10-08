@@ -89,6 +89,7 @@ img {
   border-radius: 20px;
   width: auto;
   height: auto;
+  object-fit: fill;
 }
 
 .map {
