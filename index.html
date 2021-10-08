@@ -6,8 +6,10 @@
     <meta charset="UTF-8">
     <meta name="description" content="The landing page for CoffeeHome">
 
+    <!--- Bootstrap and custom CSS --->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <!--- Header style --->
     <style>
         .jumbotron {
           background-image: url("assets/pourover-home-coffee.jpg");
@@ -19,11 +21,13 @@
         }
         </style>
 
+  `<!--- Title to appear on browser tab --->   
     <title>CoffeeHome</title>
     <meta name="author" content="Jessica de Leeuw">
 </head>
 
   <body>
+    <!--- Header and navigation bar --->
     <div class="jumbotron text-center">
       <h1><i>Coffee Home</i></h1>
       <div class="topnav"> 
@@ -35,28 +39,34 @@
     </div>
     <br><br>
 
-    <div class="row" style="height: 100px;">
+    <!--- Empty row class to create space on page --->
+    <div class="row" style="height: 10%;">
     </div>
 
+    <!--- Row class containing text and search --->
     <div class="row" style="background-color: #345995;">
       <div style="color: #fff; font-size: 270%; padding: 5%;">
         <b>Find high quality coffee shops near you</b>
       </div>
+      <!--- Creates a search bar --->
       <form id="form" role="search" style="width: 90%; margin: 0 auto;">
         <input type="search" id="query" name="q"
          placeholder="Search..."
          aria-label="Search through site content">
+         <!--- Currently uses link instead of button until JS is implemented --->
          <a href="results-page/results-page.html">Search</a>
          
       </form>
     </div>
 
-    <div class="row" style="background-color: #fff; height: 70%; padding-bottom: 5%;">
+    <!--- Row with some text and opposite colours --->
+    <div class="row" style="height: 70%; padding-bottom: 5%;">
         <div style="font-size: 200%;">
           <i>Fully vetted reviews from coffee professionals</i>
         </div>
      </div>
 
+     <!--- Row containing sample review --->
       <div class="row" style="background-color: #345995;">
         <div class="block-text">
           <i>"Professional, detailed, CoffeeHome reviews helped me find a local coffee shop with the perfect brew! Now I get my coffe fix there every weekend."</i>
@@ -65,10 +75,11 @@
         </div>
       </div>
 
-
+  <!--- Bootstrap sheet --->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
   </body>
   
+  <!--- Sample footer --->
   <footer>
       <div class=" foot text-center p-3">
           © 2021 Copyright

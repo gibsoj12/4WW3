@@ -7,8 +7,10 @@
     <meta charset="UTF-8">
     <meta name="description" content="Sign in or sign up to the website">
 
+	<!--- Bootstrap style sheet  and custom CSS --->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <link rel="stylesheet" href="user-registration-page.css">
+	<!--- Header styling --->
     <style>
         .jumbotron {
           background-image: url("../assets/pourover-home-coffee.jpg");
@@ -20,13 +22,16 @@
         }
         </style>
 
+	<!--- Title appears in tab bar on browser --->
     <title>Sign up/Sign in</title>
     <meta name="author" content="Jessica de Leeuw">
 </head>
 
 <body>
+	<!--- Bootstrap styling --->
     <div class="jumbotron text-center">
         <h1></h1>
+	<!--- Creates nav bar with links --->
     <div class="topnav"> 
         <a href="../index.html">Home</a>
         <a href="user-registration-page.html#signin" style="float: right;">Sign in</a>
@@ -40,12 +45,15 @@
 			Sign up
 		</h2>
 
-		<form>
+		<form> <!--- Creates a form, each of these are input boxes for the user to enter answers --->
 			<label for="fname" aria-placeholder="First Name"></label><br>
 			<input type="text" id="fname" name="fname" placeholder="First Name" style="text-align: center;"><br>
 
 			<label for="lname" aria-placeholder="Last Name"></label><br>
 			<input type="text" id="lname" name="lname" placeholder="Last Name" style="text-align: center;"><br>
+
+			<label for="bday" aria-placeholder="Birthday"></label><br>
+			<input type="date" id="bday" name="bday" placeholder="Birthday" style="text-align: center;"><br>
 
 			<label for="email" aria-placeholder="Email: abcd@example.com"></label><br>
 			<input type="email" id="lname" name="email" placeholder="Email Address" style="text-align: center;"><br>
@@ -56,24 +64,29 @@
 			<label for="rpass" aria-placeholder="Please re-enter your password"></label><br>
 			<input type="password" id="rpass" name="rpass" placeholder="Re-enter your password" style="text-align: center;"><br>
 		  </form> 
-		  <br>
+		  <br> 
 
 
-		<input type="checkbox" id="tos" name="tos" value="ToS">
-		<label for="tos">I agree to the <a href="../assets/terms-of-service.txt">Terms of Service</a></label>
+		<input type="checkbox" id="tos" name="tos" value="ToS"> <!--- Checkbox for user to click --->
+		<!--- terms-of-service is currently random, found online, just used for display purposes --->
+		<label for="tos">I agree to the <a href="../assets/terms-of-service.txt">Terms of Service</a></label> <!--- Links to terms of service --->
 		<br>
 
+		<!--- Button for the user to submit form, does not redirect as of now --->
 		<button class="form-submit" type="button">Register</button> 
 		<br>
 	</div>
 
 	<br>
 
+	<!--- Styled container --->
 	<div class="container" id="signin">
+		<!--- Heading in container --->
 		<h2>
 			Sign in
 		</h2>
 
+		<!--- Creates a form for the user to fill out --->
 		<form>
 			<label for="email-login" aria-placeholder="Email: abcd@example.com"></label><br>
 			<input type="email" id="email-login" name="email-login" placeholder="Email Address" style="text-align: center;"><br>
@@ -84,17 +97,21 @@
 		  <br>
 
 
+		<!--- Checkbox for user to click --->
 		<input type="checkbox" id="rememberme" name="rememberme" value="Remeber me">
 		<label for="rememberme">Remember Me</label>
 		<br>
 
+		<!--- Button for user to submit form, does not do anyting as of now --->
 		<button class="form-submit" type="button">Register</button> 
 		<br>
 	</div>
 
+ <!--- For bootstrap --->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
 </body>
 
+<!--- Sample footer --->
 <footer>
     <div class=" foot text-center p-3">
         © 2021 Copyright

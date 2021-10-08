@@ -7,8 +7,10 @@
     <meta charset="UTF-8">
     <meta name="description" content="Sign in or sign up to the website">
 
+    <!--- Bootstrap style sheet and custom CSS --->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <link rel="stylesheet" href="object-submission-page.css">
+    <!--- Header styling --->
     <style>
         .jumbotron {
           background-image: url("../assets/pourover-home-coffee.jpg");
@@ -20,13 +22,16 @@
         }
         </style>
 
+    <!--- Title appears in browser tab --->
     <title>Add a Location</title>
     <meta name="author" content="Jessica de Leeuw">
 </head>
 
 <body>
+    <!--- Bootstrap styling --->
     <div class="jumbotron text-center">
         <h1></h1>
+    <!--- Creates navigation bar --->
     <div class="topnav"> 
         <a href="../index.html">Home</a>
         <a class="active" href="object-submission-page.html">Add a Location</a>
@@ -35,16 +40,20 @@
       </div>
 	</div>
 
-	<div class="container" id="signin">
+    <!--- Custom container --->
+	<div class="container" id="submit-object">
+        <!--- Container heading --->
 		<h2>
 			Basic details
 		</h2>
+
+        <!--- Creates form with fields for use to fill out --->
 		<form>
 			<label for="name" aria-placeholder="Name"></label><br>
 			<input type="text" id="name" name="name" placeholder="Name of Coffee Shop" style="width: 40%;"><br>
 			
-			<label for="address" aria-placeholder="Address"></label><br>
-			<input type="text" id="address" name="address" placeholder="Address of Coffee Shop" style="width: 40%;"><br>
+			<label for="location" aria-placeholder="Location"></label><br>
+			<input type="text" id="location" name="location" placeholder="Location of the Coffee Shop" style="width: 40%;"><br>
         
 			<label for="url" aria-placeholder="Website"></label><br>
 			<input type="url" id="url" name="url" placeholder="Link to website" style="width: 40%;"><br>
@@ -58,6 +67,7 @@
             Does it offer...
         </h3>
         
+        <!--- Creates set of checkboxes for user to click --->
 		<input type="checkbox" id="espresso" name="espresso" value="Espresso">
 		<label for="espresso">Espresso</label><br>
         
@@ -81,19 +91,23 @@
             Upload pictures
         </h4>
 
+        <!--- Lets user upload a picture --->
         <form action="">
             <input type="file" id="upload-file" name="filename">
             <label for="upload-file"></label>
           </form>
 
         <br>
+        <!--- Form submit button --->
 		<button class="form-submit" type="button">Add Coffee Shop</button> 
 		<br>
 	</div>
 
+<!--- Bootstrap style --->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
 </body>
 
+<!--- Sample footer --->
 <footer>
     <div class=" foot text-center p-3">
         © 2021 Copyright
