@@ -90,6 +90,7 @@ img {
   width: auto;
   height: auto;
   object-fit: fill;
+  max-width: 100%;
 }
 
 .map {
