@@ -36,6 +36,7 @@ h1 {
     color: black;
   }
 
+  /* Custom styling for container class */ 
 .container {
     width: auto;
     background: #fff;
@@ -47,6 +48,7 @@ h1 {
     padding-bottom: 5%;
   }
 
+    /* Custom form submit for submit button */ 
   .form-submit {
     display: inline-block;
     background: #345995;
@@ -59,6 +61,7 @@ h1 {
     cursor: pointer;
   }
   
+  /* Custom styling for hovering over submit button */ 
   .form-submit:hover {
     background: #8acdea;
   }

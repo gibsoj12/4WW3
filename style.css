@@ -3,6 +3,7 @@
   --star-background: #54442b;
 }
 
+/* Navigation bar styling */
 .topnav {
   background-color: #3e66a5;
   overflow: hidden;
@@ -10,6 +11,7 @@
   border-radius: 5px;
 }
 
+/* Individual element nav bar styling */
 .topnav a {
   float: left;
   color: #f2f2f2;
@@ -19,27 +21,19 @@
   font-size: 17px;
 }
 
+/* Individual element when mouse is hovering nav bar styling */
 .topnav a:hover {
   background-color: #eef8fc;
   color: black;
 }
 
+/* Individual element when marked as active nav bar styling */
 .topnav a.active {
   background-color: #8acdea;
   color: black;
 }
 
-form {
-  background-color: #f2f2f2;
-  width: 100%;
-  height: 1%;
-  border-radius: 10px;
-  border-color: black;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
+/* Custom styling for inputs */
 input {
   all: unset;
   font: 16px system-ui;
@@ -49,11 +43,13 @@ input {
   padding: 10%;
 }
 
+/* Custom styling for placeholders on forms */
 ::placeholder {
   color: black;
   opacity: 0.7;
 }
 
+/* Custom styling for button */
 button {
   all: unset;
   cursor: pointer;
@@ -61,14 +57,7 @@ button {
   height: 44px;
 }
 
-svg {
-  color: #fff;
-  fill: currentColor;
-  width: 24px;
-  height: 24px;
-  padding: 10px;
-}
-
+/* Custom styling for container class */
 .container {
   width: auto;
   background: #fff;
@@ -78,6 +67,7 @@ svg {
   padding-top: 50px;
 }
 
+/* available fonts for body */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -95,6 +85,7 @@ img {
   /* without max-width the image would create side-scrolling issues */
 }
 
+/* Custom styling for map class */
 .map {
   object-fit: fill;
   border-radius: 20px;
@@ -121,16 +112,19 @@ img {
   -webkit-text-fill-color: transparent;
 }
 
+/* Custom styling for headings */
 h1 {
   font-size: 600%;
   padding: 10%;
   text-align: center;
 }
 
+/* Custom column class */
 .column {
   float: left;
 }
 
+/* Custom row class */
 .row {
   height: 45%;
   padding-top: 5px;
@@ -138,6 +132,7 @@ h1 {
   text-align: center;
 }
 
+/* Custom block-text class */
 .block-text {
   color: #fff;
   font-size: 200%;
@@ -156,30 +151,19 @@ display: table;
 clear: both;
 }
 
+/* Custom styling for forms, */
 form {
-  background-color: #fff;
-  width: 300px;
-  height: 44px;
-  border-radius: 5px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  border-color: black;
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 300px;
+  height: 44px;
 }
 
-.has-search, .form-control {
-  padding-left: 2.375rem;
-}
-
-.has-search, .form-control-feedback {
-  position: absolute;
-  z-index: 2;
-  display: block;
-  width: 2.375rem;
-  height: 2.375rem;
-  text-align: center;
-  color: #aaa;
-}
-
+/* Custom footer styling */
 .foot {
   border-radius: 1%;
 }
