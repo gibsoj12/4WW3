@@ -10,6 +10,7 @@
 	<!--- Bootstrap style sheet  and custom CSS --->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <link rel="stylesheet" href="user-registration-page.css">
+	<script type="text/javascript" src="user-registration-page.js"></script>
 	<!--- Header styling --->
     <style>
         .jumbotron {
@@ -73,7 +74,7 @@
 		<br>
 
 		<!--- Button for the user to submit form, does not redirect as of now --->
-		<button class="form-submit" type="button">Register</button> 
+		<button onclick="validateForm();" class="form-submit" type="button">Register</button> 
 		<br>
 	</div>
 
