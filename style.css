@@ -89,6 +89,7 @@ img {
 .map {
   object-fit: fill;
   border-radius: 20px;
+  height: 200px;
 }
 
 /*This method for static stars in html and css was found at https://css-tricks.com/five-methods-for-five-star-ratings/ */
