@@ -19,6 +19,6 @@ function displayMyLocation() {
     id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1,
-    accessToken: 'pk.eyJ1IjoiZ2lic29qMTIiLCJhIjoiY2t2bDM3Z2Z6MzBnaTJvbnl6YjYyYXB5NiJ9.oUYYVzj-s5a25lh415HLQQ'
+    accessToken: 'pk.eyJ1IjoiZ2lic29qMTIiLCJhIjoiY2t2bGVyZ3E1NmRmMjJ1cTFkMDg3NXM4MyJ9.qwcU5DNE5EX6jzAZk5I_qA'
 }).addTo(my_map);
 }
