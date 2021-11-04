@@ -1,5 +1,5 @@
-var x = document.getElementById("map");
-/*function displayMyLocation() {
+/*var x = document.getElementById("map");
+function displayMyLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(displayPosition);
   } else {
@@ -9,8 +9,8 @@ var x = document.getElementById("map");
 
 function displayMyLocation() {
     
-    x.innerHTML = "Latitude: " + "43.262114" +
-    "<br>Longitude: " + "-79.905834"
+    /* x.innerHTML = "Latitude: " + "43.262114" +
+    "<br>Longitude: " + "-79.905834"; */
 
     var my_map = L.map('map').setView([43.262114, -79.905834], 14);
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
