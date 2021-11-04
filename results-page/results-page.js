@@ -3,7 +3,7 @@ function displayMyLocation() {
 }
 
 function displayPosition(position) {
-    
+    document.writeln(position.coords.latitude);
     var my_map = L.map('map').setView([position.coords.latitude, position.coords.longitude], 14);
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
