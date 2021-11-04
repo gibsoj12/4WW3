@@ -4,6 +4,7 @@ function shopsNearMe() {
 }
 
 function displayPosition(position) {
+    
     var my_map = L.map('map').setView([position.coords.latitude, position.coords.longitude], 14);
     L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
     {
