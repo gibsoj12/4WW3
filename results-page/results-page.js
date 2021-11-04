@@ -1,5 +1,5 @@
-/* var x = document.getElementById("demo");
-function displayMyLocation() {
+var x = document.getElementById("map");
+/*function displayMyLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(displayPosition);
   } else {
