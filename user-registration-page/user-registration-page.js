@@ -17,26 +17,26 @@ function validateForm() {
     }
 
     // password validation
-    let password_value = document.forms["frmregistration"]["txtpassword"].value();
+    let password_value = document.forms["frmregistration"]["spass"].value();
 
     if (password_value == "") {
       alert("Name is a required field.");
-      document.getElementById('txtname').focus();
+      document.getElementById('spass').focus();
       return false;
     }
 
     // email validation
-    let email_value = document.forms["frmregistration"]["txtemail"].value();
+    let email_value = document.forms["frmregistration"]["email"].value();
     var regex = /\S+@\S+\. \S/;
 
     if (email_value == "") {
         alert("Email is a required field");
-        document.getElementById('txtemail').focus();
+        document.getElementById('email').focus();
         return false;
     }
     else if (!regex.test(email_value)) {
         alert("Email is invalid");
-        document.getElementById('txtemail').focus();
+        document.getElementById('email').focus();
         return false;
     }
   }
