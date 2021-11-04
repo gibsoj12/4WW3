@@ -163,7 +163,22 @@ form {
   height: 44px;
 }
 
+/* Custom form submit for submit button */ 
+.form-submit {
+  background: #f2f2f2;
+  border-color: black;
+  display: flex;
+  border-radius: 5px;
+  margin-top: 1%;
+  margin-right: 20%;
+  width: auto;
+  height: 44px;
+  align-items: center;
+  cursor: pointer;
+}
+
 /* Custom footer styling */
 .foot {
   border-radius: 1%;
 }
+
