@@ -27,7 +27,7 @@ function validateForm() {
 
     // email validation
     let email_value = document.forms["signup-form"]["email"].value;
-    var regex = /\S+@\S+\. \S/;
+    var regex = /\S+@\S+\.\S+/;
 
     if (email_value == "") {
         alert("Email is a required field");
