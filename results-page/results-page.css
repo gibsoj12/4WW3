@@ -26,5 +26,7 @@ td {
 }
 
 #my_map {
-  height: 200px;
+  object-fit: fill;
+  border-radius: 20px;
+  height: 500px;
 }
