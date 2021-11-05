@@ -46,7 +46,7 @@
 			Sign up
 		</h2>
 
-		<form id="signup-form" autocomplete="off" onsubmit="return validateForm()"> <!--- Creates a form, each of these are input boxes for the user to enter answers --->
+		<form id="signup-form" autocomplete="off" class="needs-validation" onsubmit="return validateSignUp();"> <!--- Creates a form, each of these are input boxes for the user to enter answers --->
 			<label for="fname" aria-placeholder="First Name"></label><br>
 			<input type="text" id="fname" name="fname" placeholder="First Name" style="text-align: center;"><br>
 
@@ -88,7 +88,7 @@
 		</h2>
 
 		<!--- Creates a form for the user to fill out --->
-		<form>
+		<form id="signin-form" autocomplete="off" class="needs-validation" onsubmit="return validateSignUp();">
 			<label for="email-login" aria-placeholder="Email: abcd@example.com"></label><br>
 			<input type="email" id="email-login" name="email-login" placeholder="Email Address" style="text-align: center;"><br>
 			
@@ -104,7 +104,7 @@
 		<br>
 
 		<!--- Button for user to submit form, does not do anyting as of now --->
-		<button class="form-submit" type="button">Register</button> 
+		<button class="form-submit" type="button">Sign in</button> 
 		<br>
 	</div>
 
