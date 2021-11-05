@@ -1,6 +1,6 @@
 function validateForm() {
     //name validation
-    let first_name_value = document.forms["signup-form"]["fname"].value();
+    let first_name_value = document.forms["signup-form"]["fname"].value;
 
     if (first_name_value == "") {
       alert("Name is a required field.");
@@ -8,7 +8,7 @@ function validateForm() {
       return false;
     }
 
-    let last_name_value = document.forms["signup-form"]["lname"].value();
+    let last_name_value = document.forms["signup-form"]["lname"].value;
 
     if (last_name_value == "") {
       alert("Name is a required field.");
@@ -17,7 +17,7 @@ function validateForm() {
     }
 
     // password validation
-    let password_value = document.forms["signup-form"]["spass"].value();
+    let password_value = document.forms["signup-form"]["spass"].value;
 
     if (password_value == "") {
       alert("Name is a required field.");
@@ -26,7 +26,7 @@ function validateForm() {
     }
 
     // email validation
-    let email_value = document.forms["signup-form"]["email"].value();
+    let email_value = document.forms["signup-form"]["email"].value;
     var regex = /\S+@\S+\. \S/;
 
     if (email_value == "") {
