@@ -46,7 +46,7 @@
 			Sign up
 		</h2>
 
-		<form id="frmregistration"> <!--- Creates a form, each of these are input boxes for the user to enter answers --->
+		<form id="signup-form" autocomplete="off" onsubmit="return validateForm()"> <!--- Creates a form, each of these are input boxes for the user to enter answers --->
 			<label for="fname" aria-placeholder="First Name"></label><br>
 			<input type="text" id="fname" name="fname" placeholder="First Name" style="text-align: center;"><br>
 
@@ -74,7 +74,7 @@
 		<br>
 
 		<!--- Button for the user to submit form, does not redirect as of now --->
-		<button onclick="validateForm();" class="form-submit" type="button">Register</button> 
+		<button class="form-submit" type="submit">Register</button> 
 		<br>
 	</div>
 
