@@ -17,6 +17,7 @@
 }
 
 #object_map {
+  object-fit: fill;
   border-radius: 20px;
-  height: 400px;
+  height: 500px;
 }
