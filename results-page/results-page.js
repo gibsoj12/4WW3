@@ -28,4 +28,11 @@ function displayMyLocation() {
     .bindPopup('Paisleys Coffeehouse and Eatery.<br><a href="../about-page/about-page.html">Paisleys review</a>')
     .openPopup();
 
+  L.marker([43.262494, -79.905428]).addTo(my_map)
+    .bindPopup('Mikel Cofee.<br><a href="https://www.mikelcoffee.com/el/home"> Mikel Coffee</a>')
+    .openPopup();
+
+  L.marker([43.262405, -79.905200]).addTo(my_map)
+    .bindPopup('Second Cup.<br><a href="https://secondcup.com/">Second Cup</a>')
+    .openPopup();
 }

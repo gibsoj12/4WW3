@@ -15,3 +15,8 @@
   margin: auto;
   flex-basis: 33.33%;
 }
+
+#object_map {
+  border-radius: 20px;
+  height: 400px;
+}
