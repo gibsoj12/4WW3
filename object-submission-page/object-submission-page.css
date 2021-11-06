@@ -64,15 +64,15 @@ h1 {
   background: #8acdea;
 }
 
-input:required {
+input[type="text"]:required {
   border-color: black;
 }
 
-input:optional {
+input[type="text"]:optional {
   border-color: gray;
 }
 
-input:focus:invalid {
+input:focus[type="text"]:invalid {
   border-color: red;
 }
 
