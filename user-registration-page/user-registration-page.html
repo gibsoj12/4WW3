@@ -46,7 +46,7 @@
 			Sign up
 		</h2>
 
-		<form id="signup-form" autocomplete="off" class="form-signin needs-validation" onsubmit="return validateSignUp();"> <!--- Creates a form, each of these are input boxes for the user to enter answers --->
+		<form id="signup-form" autocomplete="off" class="form-signin needs-validation"> <!--- Creates a form, each of these are input boxes for the user to enter answers --->
 			<label for="fname" aria-placeholder="First Name"></label><br>
 			<input type="text" id="fname" name="fname" placeholder="First Name" style="text-align: center;"><br>
 
@@ -67,15 +67,18 @@
 		  </form> 
 		  <br> 
 
-
 		<input type="checkbox" id="tos" name="tos" value="ToS"> <!--- Checkbox for user to click --->
 		<!--- terms-of-service is currently random, found online, just used for display purposes --->
 		<label for="tos">I agree to the <a href="../assets/terms-of-service.txt">Terms of Service</a></label> <!--- Links to terms of service --->
 		<br>
 
 		<!--- Button for the user to submit form, does not redirect as of now --->
-		<button class="form-submit" type="submit">Register</button> 
+		<button class="form-submit" type="button" onclick="validateSignUp();">Register</button> 
 		<br>
+
+		<div id="alert-div" class="alert" style="display: none">
+		  Please fill out the required fields.
+		</div> 
 	</div>
 
 	<br>
@@ -88,7 +91,7 @@
 		</h2>
 
 		<!--- Creates a form for the user to fill out --->
-		<form id="signin-form" autocomplete="off" class="form-signin needs-validation"  onsubmit="return validateSignUp();">
+		<form id="signin-form" autocomplete="off" class="form-signin needs-validation">
 			<label for="email-login" aria-placeholder="Email: abcd@example.com"></label><br>
 			<input type="email" id="email-login" name="email-login" placeholder="Email Address" style="text-align: center;"><br>
 			
@@ -97,15 +100,19 @@
 		  </form> 
 		  <br>
 
-
 		<!--- Checkbox for user to click --->
 		<input type="checkbox" id="rememberme" name="rememberme" value="Remeber me">
 		<label for="rememberme">Remember Me</label>
 		<br>
 
 		<!--- Button for user to submit form, does not do anyting as of now --->
-		<button class="form-submit" type="button">Sign in</button> 
+		<button class="form-submit" type="button" onclick="validateSignIn();">Sign in</button> 
 		<br>
+
+		<div id="signin-alert" class="alert" style="display: none">
+			<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+			Please fill out the required fields.
+		</div> 
 	</div>
 
  <!--- For bootstrap --->
