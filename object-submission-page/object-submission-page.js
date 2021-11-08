@@ -10,9 +10,9 @@ function displayPosition(position) {
 
   var name = document.getElementById("name").value;
 
-  var x = document.getElementById("map_text");
-  x.innterHTML = "Latitude: " + position.coords.latitude +
-    "<br>Longitude: " + position.coords.longitude;
+  var x = document.getElementById("location");
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
 
     var my_map = L.map('my_map').setView([position.coords.latitude, position.coords.longitude], 16);
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
