@@ -33,7 +33,7 @@
             crossorigin=""/>
 </head>
 
-<body>
+<body  onload="displayMyLocation();">
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
             integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
             crossorigin="">
@@ -51,7 +51,7 @@
 	</div>
 
     <!--- Custom container --->
-	<div class="container" id="submit-object" onload="displayMyLocation();">
+	<div class="container" id="submit-object">
         <!--- Container heading --->
 		<h2>
 			Basic details
