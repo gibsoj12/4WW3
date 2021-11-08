@@ -51,7 +51,7 @@
 	</div>
 
     <!--- Custom container --->
-	<div class="container" id="submit-object">
+	<div class="container" id="submit-object" onload="displayMyLocation();">
         <!--- Container heading --->
 		<h2>
 			Basic details
@@ -63,7 +63,7 @@
 			<input type="text" id="name" name="name" placeholder="Name of Coffee Shop" style="width: 40%;" required><br>
 			
 			<label for="location" aria-placeholder="Location"></label><br>
-			<input type="text" id="location" name="location" placeholder="Location of the Coffee Shop" style="width: 40%;" required><br>
+			<input type="text" id="location" name="location" placeholder="Location (your current coordinates will show on map)" style="width: 40%;" required><br>
         
 			<label for="url" aria-placeholder="Website"></label><br>
 			<input type="url" id="url" name="url" placeholder="Link to website" style="width: 40%;" optional><br>
@@ -78,6 +78,7 @@
         </h3>
         
         <!--- Creates set of checkboxes for user to click --->
+        <!--Box is red if input is invalid-->
 		<input type="checkbox" id="espresso" name="espresso" value="Espresso">
 		<label for="espresso">Espresso</label><br>
         
@@ -109,7 +110,7 @@
 
         <br>
         <!--- Form submit button --->
-		<button class="form-submit" type="button" onclick="displayMyLocation();">Add Coffee Shop</button> 
+		<button class="form-submit" type="button">Add Coffee Shop</button> 
 		<br>
 	</div>
     <div class="container">
