@@ -10,7 +10,7 @@ function displayPosition(position) {
 
   var name = document.getElementById("name").value;
 
-  var x = document.getElementById("location");
+  var x = document.getElementById("map_text");
   x.innerHTML = "Latitude: " + position.coords.latitude +
   "<br>Longitude: " + position.coords.longitude;
 
@@ -25,6 +25,7 @@ function displayPosition(position) {
     }).addTo(my_map);
   
     L.marker([position.coords.latitude, position.coords.longitude]).addTo(my_map)
-      .bindPopup(name)
+      .bindPopup(name + "Latitude: " + position.coords.latitude +
+      "<br>Longitude: " + position.coords.longitude)
       .openPopup();
 }
