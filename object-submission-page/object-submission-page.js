@@ -8,9 +8,9 @@ function displayMyLocation() {
 
 function displayPosition(position) {
 
-  var x = document.getElementById("map_text");
   var name = document.getElementById("name").value;
 
+  var x = document.getElementById("map_text");
   x.innterHTML = "Latitude: " + position.coords.latitude +
     "<br>Longitude: " + position.coords.longitude;
 
