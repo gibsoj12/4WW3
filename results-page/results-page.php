@@ -3,10 +3,10 @@
 function search_with_name()
 {
     $name = $_REQUEST['name'];
-    $servername = "placeholder";
-    $username = "placeholder";
-    $password = "placeholder";
-    $dbname = "placeholder";
+    $servername = "3.21.69.46:3306";
+    $username = "root";
+    $password = "";
+    $dbname = "coffee_house";
 
     // Create the connection
 
@@ -17,10 +17,10 @@ function search_with_name()
         die("Connection failed: " . $conn->connect_error)
     }
 
-
-
-    $stmt = "SELECT * FROM `Objects` WHERE name like `$name`";
+    $stmt = "SELECT * FROM `users`;
     $result = $conn->query($stmt);
+
+    echo $result;
 
     //Make sure there is a match
     if($result->num_rows > 0) {
