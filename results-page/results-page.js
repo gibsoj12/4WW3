@@ -6,6 +6,24 @@ function displayMyLocation() {
   }
 }
 
+function testTables() {
+  jQuery.ajax({
+    type: "POST",
+    url: 'restults-page.php',
+    dataType: 'json',
+    data: {functionname: 'search_with_name', arguments: []},
+  
+    success: function (obj, textstatus) {
+                  if( !('error' in obj) ) {
+                      yourVariable = obj.result;
+                  }
+                  else {
+                      console.log(obj.error);
+                  }
+            }
+  });
+}
+
 function displayPosition(position) {
 
   var x = document.getElementById("map_text");
