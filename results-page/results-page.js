@@ -9,10 +9,18 @@ function displayMyLocation() {
 }
 
 function testTables() {
-  getRequest(
-    'results-page.php', // URL for the PHP file
-     search_with_name  // handle successful request
-  );
+  let btn = document.getElementById("hello");
+
+    btn.addEventListener("click", function(){
+      fetch("results-page.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+        },
+      })
+      .then((response) => response.text())
+      .then((res) => (document.getElementById("hello").innerHTML = res));
+    })
   /* jQuery.ajax({
     type: "POST",
     url: 'results-page.php',
@@ -58,37 +66,4 @@ function displayPosition(position) {
   L.marker([43.262405, -79.905200]).addTo(my_map)
     .bindPopup('Second Cup.<br><a href="https://secondcup.com/">Second Cup</a>')
     .openPopup();
-}
-
-// https://stackoverflow.com/questions/7165395/call-php-function-from-javascript
-function getRequest(url, success, error) {
-  var req = false;
-  try{
-      // most browsers
-      req = new XMLHttpRequest();
-  } catch (e){
-      // IE
-      try{
-          req = new ActiveXObject("Msxml2.XMLHTTP");
-      } catch(e) {
-          // try an older version
-          try{
-              req = new ActiveXObject("Microsoft.XMLHTTP");
-          } catch(e) {
-              return false;
-          }
-      }
-  }
-  if (!req) return false;
-  if (typeof success != 'function') success = function () {};
-  if (typeof error!= 'function') error = function () {};
-  req.onreadystatechange = function(){
-      if(req.readyState == 4) {
-          return req.status === 200 ? 
-              success(req.responseText) : error(req.status);
-      }
-  }
-  req.open("GET", url, true);
-  req.send(null);
-  return req;
 }
