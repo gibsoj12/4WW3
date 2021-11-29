@@ -1,3 +1,5 @@
+import $ from "jquery";
+
 function displayMyLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(displayPosition);
