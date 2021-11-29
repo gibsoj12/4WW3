@@ -2,7 +2,8 @@
 
 function search_with_name()
 {
-    $name = $_REQUEST['name'];
+    echo "Hello";
+    //$name = $_REQUEST['name'];
     $servername = "3.21.69.46:3306";
     $username = "root";
     $password = "";
@@ -14,10 +15,10 @@ function search_with_name()
     // Check if the connection is valid
     if ($conn->connect_error) {
         echo "Failed to connect" . $conn->$connect_error;
-        die("Connection failed: " . $conn->connect_error)
+        die("Connection failed: " . $conn->connect_error);
     }
 
-    $stmt = "SELECT * FROM `users`;
+    $stmt = "SELECT * FROM `users`";
     $result = $conn->query($stmt);
 
     echo $result;
