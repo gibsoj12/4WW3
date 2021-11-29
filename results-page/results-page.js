@@ -13,7 +13,7 @@ function testTables() {
 
     btn.addEventListener("click", function(){
       fetch("results-page.php", {
-        method: "POST",
+        method: "GET",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
         },

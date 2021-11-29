@@ -9,11 +9,11 @@ function search_with_name()
     $dbname = "coffee_house";
 
     // Create the connection
-
     $conn = new msqli($servername, $username, $password, $dbname);
 
-    //Check if the connection is valid
+    // Check if the connection is valid
     if ($conn->connect_error) {
+        echo "Failed to connect" . $conn->$connect_error;
         die("Connection failed: " . $conn->connect_error)
     }
 
@@ -22,7 +22,7 @@ function search_with_name()
 
     echo $result;
 
-    //Make sure there is a match
+    // Make sure there is a match
     if($result->num_rows > 0) {
         echo "<table><tr><th>Name</th><th>Rating</th></tr>";
         // output each row
