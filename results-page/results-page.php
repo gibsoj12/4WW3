@@ -4,7 +4,7 @@ function search_with_name() {
     //$name = $_REQUEST['name'];
     $servername = "3.21.69.46:3306";
     $username = "root";
-    $password = "";
+    $password = "password";
     $dbname = "coffee_house";
 
     // Create the connection
