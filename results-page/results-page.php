@@ -2,14 +2,14 @@
 
 function search_with_name() {
     //$name = $_REQUEST['name'];
-    $servername = "3.21.69.46";
+    $servername = "localhost";
     $username = "root";
     $password = "password";
     $dbname = "coffee_house";
-    $port = "3306";
+    // $port = "3306";
 
     // Create the connection
-    $conn = new mysqli($host, $username, $password, $db_name, $port);
+    $conn = new mysqli($host, $username, $password, $db_name);
 
     // Check if the connection is valid
     if ($conn->connect_error) {
