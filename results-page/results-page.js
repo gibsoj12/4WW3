@@ -25,10 +25,11 @@ function testTables() {
     });
 
   console.log(res); */
-  jQuery.ajax({
+  $.ajax({
     type: "GET",
     url: 'results-page.php',
     dataType: 'json',
+    timeout: 20000,
     data: {functionname: 'search_with_name', arguments: []},
   
     success: function (obj, textstatus) {
@@ -40,8 +41,9 @@ function testTables() {
                   else {
                       console.log(obj.error);
                   }
-            }
-  });
+            },
+    error: function(XMLHttpRequest, textStatus, errorThrown){}    
+  }).fail(function(jqXHR, textStatus){});
 }
 
 function displayPosition(position) {

@@ -1,43 +1,38 @@
 <?php
 
+include_once '../database.php';
+
 function search_with_name() {
-    //$name = $_REQUEST['name'];
-    $servername = "localhost";
-    $username = "root";
-    $password = "password";
-    $dbname = "coffee_house";
-    // $port = "3306";
+    
+    $database = new Database();
+    $db = $database->getConnection();
 
-    // Create the connection
-    $conn = new mysqli($host, $username, $password, $db_name);
+    if($db['status'] == '0') {
+        die("Connection failed:" . $db['message']);
+    } else {
+        $conn = $db['connection'];
+        $stmt = "SELECT * FROM `users`";
+        if($conn->query($stmt) === TRUE) {
+            $response_status = '1';
+            $response_code = '200';
+            $response_desc = "Query made successfully";
+        } else {
+            $response_status = '2';
+            $response_code = '400';
+            $response_desc = "Error: " . $stmt . " " . $conn->error;
+        }
+        // $result = $conn->query($stmt);
+        
+        // echo $result;
+        $conn->close(); // Close the connection
+        $response['response_status'] = $response_status;
+        $response['response_code'] = $response_code;
+        $response['response_desc'] = $response_desc;
 
-    // Check if the connection is valid
-    if ($conn->connect_error) {
-        echo "Failed to connect" . $conn->$connect_error;
-        die("Connection failed: " . $conn->connect_error);
+        $json_response = json_encode($response);
+        echo $json_response;
     }
 
-    echo "Connected";
-
-    $stmt = "SELECT * FROM `users`";
-    $result = $conn->query($stmt);
-
-    echo $result;
-
-    // Make sure there is a match
-    if($result->num_rows > 0) {
-        echo "<table><tr><th>Name</th><th>Rating</th></tr>";
-        // output each row
-        while($row = $result->fetch_assoc()) {
-            echo "<tr><td>".$row["name"]."</td><td>".$row["rating"]."</td></tr>";
-          }
-          echo "</table>";
-    }
-    else {
-        echo "0 results";
-    }
-
-    $conn->close();
     exit();
 }
 
