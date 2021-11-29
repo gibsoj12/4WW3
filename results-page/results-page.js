@@ -32,6 +32,7 @@ function testTables() {
   
     success: function (obj, textstatus) {
                   if( !('error' in obj) ) {
+                    console.log("success");
                       yourVariable = obj.result;
                   }
                   else {
