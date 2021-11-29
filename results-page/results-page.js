@@ -9,6 +9,7 @@ function displayMyLocation() {
 }
 
 function testTables() {
+  let btn = document.getElementById("hello");
   let res = "";
 
     btn.addEventListener("click", function(){
@@ -21,6 +22,7 @@ function testTables() {
       .then((response) => response.text())
       .then((result) => (res = result));
     });
+
   console.log(res);
   /* jQuery.ajax({
     type: "POST",
