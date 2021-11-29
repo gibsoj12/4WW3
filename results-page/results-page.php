@@ -1,8 +1,6 @@
 <?php
 
-function search_with_name()
-{
-    echo "Hello";
+function search_with_name() {
     //$name = $_REQUEST['name'];
     $servername = "3.21.69.46:3306";
     $username = "root";

@@ -9,7 +9,7 @@ function displayMyLocation() {
 }
 
 function testTables() {
-  let btn = document.getElementById("hello");
+  let res = "";
 
     btn.addEventListener("click", function(){
       fetch("results-page.php", {
@@ -19,8 +19,9 @@ function testTables() {
         },
       })
       .then((response) => response.text())
-      .then((res) => (document.getElementById("hello").innerHTML = res));
-    })
+      .then((result) => (res = result));
+    });
+  console.log(res);
   /* jQuery.ajax({
     type: "POST",
     url: 'results-page.php',
