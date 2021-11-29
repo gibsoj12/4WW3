@@ -1,5 +1,7 @@
 import "jquery";
 
+document.getElementById ("checkAllTopicCheckBoxes").addEventListener("click", testTables, false);
+
 function displayMyLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(displayPosition);
