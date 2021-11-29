@@ -1,4 +1,4 @@
-import $ from "jquery";
+import "jquery";
 
 function displayMyLocation() {
   if (navigator.geolocation) {
@@ -11,7 +11,7 @@ function displayMyLocation() {
 function testTables() {
   jQuery.ajax({
     type: "POST",
-    url: 'restults-page.php',
+    url: 'results-page.php',
     dataType: 'json',
     data: {functionname: 'search_with_name', arguments: []},
   
