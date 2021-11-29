@@ -26,7 +26,7 @@ function testTables() {
 
   console.log(res); */
   jQuery.ajax({
-    type: "POST",
+    type: "GET",
     url: 'results-page.php',
     dataType: 'json',
     data: {functionname: 'search_with_name', arguments: []},

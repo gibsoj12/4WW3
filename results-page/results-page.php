@@ -35,6 +35,8 @@ function search_with_name() {
     }
 
     $conn->close();
+
+    return $result;
 }
 
 ?>
