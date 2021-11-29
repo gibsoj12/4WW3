@@ -2,19 +2,22 @@
 
 function search_with_name() {
     //$name = $_REQUEST['name'];
-    $servername = "localhost:3306";
+    $servername = "3.21.69.46";
     $username = "root";
     $password = "password";
     $dbname = "coffee_house";
+    $port = "3306";
 
     // Create the connection
-    $conn = new msqli($servername, $username, $password, $dbname);
+    $conn = new mysqli($host, $username, $password, $db_name, $port);
 
     // Check if the connection is valid
     if ($conn->connect_error) {
         echo "Failed to connect" . $conn->$connect_error;
         die("Connection failed: " . $conn->connect_error);
     }
+
+    echo "Connected";
 
     $stmt = "SELECT * FROM `users`";
     $result = $conn->query($stmt);
@@ -35,8 +38,7 @@ function search_with_name() {
     }
 
     $conn->close();
-
-    return $result;
+    exit();
 }
 
 ?>
