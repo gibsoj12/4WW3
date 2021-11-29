@@ -1,6 +1,4 @@
-import "jquery";
-
-document.getElementById ("checkAllTopicCheckBoxes").addEventListener("click", testTables, false);
+// import "jquery";
 
 function displayMyLocation() {
   if (navigator.geolocation) {
@@ -11,7 +9,11 @@ function displayMyLocation() {
 }
 
 function testTables() {
-  jQuery.ajax({
+  getRequest(
+    'results-page.php', // URL for the PHP file
+     search_with_name  // handle successful request
+  );
+  /* jQuery.ajax({
     type: "POST",
     url: 'results-page.php',
     dataType: 'json',
@@ -25,7 +27,7 @@ function testTables() {
                       console.log(obj.error);
                   }
             }
-  });
+  }); */
 }
 
 function displayPosition(position) {
