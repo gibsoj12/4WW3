@@ -9,7 +9,7 @@ function displayMyLocation() {
 }
 
 function testTables() {
-  let btn = document.getElementById("hello");
+  /* let btn = document.getElementById("hello");
   let res = "";
 
     btn.addEventListener("click", function(){
@@ -23,8 +23,8 @@ function testTables() {
       .then((result) => (res = result));
     });
 
-  console.log(res);
-  /* jQuery.ajax({
+  console.log(res); */
+  jQuery.ajax({
     type: "POST",
     url: 'results-page.php',
     dataType: 'json',
@@ -38,7 +38,7 @@ function testTables() {
                       console.log(obj.error);
                   }
             }
-  }); */
+  });
 }
 
 function displayPosition(position) {
