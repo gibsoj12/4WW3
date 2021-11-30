@@ -19,30 +19,16 @@ function displayMyLocation() {
 
 function testTables() {
   let res = "";
-  /* let btn = document.getElementById("hello");
-  let res = "";
-
-    btn.addEventListener("click", function(){
-      fetch("results-page.php", {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-        },
-      })
-      .then((response) => response.text())
-      .then((result) => (res = result));
-    });
-
-  console.log(res); */
   $.ajax({
     type: "GET",
     url: 'results-page.php',
     timeout: 20000,
     data: {functionname: 'search_with_name', arguments: []},
   
-    success: function (obj, textStatus) {
+    success: function (obj) {
+      var data = JSON.stringify(obj)
         if(!obj.error) {
-            res = obj.result;
+            res = data.response_code;
             console.log("yourvar " + res);
         }
         else {
