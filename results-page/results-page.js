@@ -18,7 +18,7 @@ function displayMyLocation() {
 }
 
 function testTables() {
-  console.log('I hate this');
+  let res = "";
   /* let btn = document.getElementById("hello");
   let res = "";
 
@@ -42,8 +42,8 @@ function testTables() {
   
     success: function (obj, textStatus) {
         if(!obj.error) {
-            yourVariable = obj.result;
-            console.log("yourvar" + yourVariable);
+            res = obj.result;
+            console.log("yourvar " + res);
         }
         else {
             console.log(obj.error);
