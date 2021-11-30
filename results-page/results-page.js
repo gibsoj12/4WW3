@@ -52,7 +52,7 @@ function testTables() {
             console.log(obj.error);
         }
     },
-    error: function(XMLHttpRequest, textStatus, errorThrown){}    
+    error: function(XMLHttpRequest, textStatus, errorThrown) {console.log('in error');}    
   }).fail(function(jqXHR, textStatus){});
 }
 
