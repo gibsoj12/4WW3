@@ -4,7 +4,6 @@ function shopsNearMe() {
 
 function searchName() {
     const shopName = document.getElementById('name-search').value;
-    console.log(shopName);
     sessionStorage.setItem("shopName", shopName);
     window.location = "./results-page/results-page.html";
 }

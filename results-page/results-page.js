@@ -3,7 +3,6 @@
 function displayMyLocation() {
 
   var shopName = sessionStorage.getItem("shopName");
-  console.log("helo" + shopName);
   if (shopName != null) {
     console.log(shopName);
     // Check database for the shop and then display that place etc.
@@ -43,15 +42,16 @@ function testTables() {
     data: {functionname: 'search_with_name', arguments: []},
   
     success: function (obj, textstatus) {
-                  if( !('error' in obj) ) {
-                      console.log('success');
-                      yourVariable = obj.result;
-                      console.log(yourVariable);
-                  }
-                  else {
-                      console.log(obj.error);
-                  }
-            },
+        console.log ('in success');
+        if( !('error' in obj) ) {
+            console.log('success');
+            yourVariable = obj.result;
+            console.log(yourVariable);
+        }
+        else {
+            console.log(obj.error);
+        }
+    },
     error: function(XMLHttpRequest, textStatus, errorThrown){}    
   }).fail(function(jqXHR, textStatus){});
 }

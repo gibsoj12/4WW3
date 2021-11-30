@@ -6,6 +6,7 @@ function search_with_name() {
     
     $database = new Database();
     $db = $database->getConnection();
+    echo "hwllo" . $db;
 
     if($db['status'] == '0') {
         die("Connection failed:" . $db['message']);
@@ -21,9 +22,7 @@ function search_with_name() {
             $response_code = '400';
             $response_desc = "Error: " . $stmt . " " . $conn->error;
         }
-        // $result = $conn->query($stmt);
-        
-        // echo $result;
+       
         $conn->close(); // Close the connection
         $response['response_status'] = $response_status;
         $response['response_code'] = $response_code;

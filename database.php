@@ -1,6 +1,6 @@
 <?php
 
-class Database{
+class Database {
     private $host = "localhost";
     private $db_name = "coffee_house";
     private $username = "root";
@@ -8,7 +8,7 @@ class Database{
     public $conn;
 
 
-    public function getConnection(){
+    public function getConnection() {
         $this->conn = new mysqli($this->host, $this->username, $this->password, $this->db_name);
 
         if($this->conn->connect_error) {
@@ -22,4 +22,5 @@ class Database{
         }
     }
 }
+
 ?>
