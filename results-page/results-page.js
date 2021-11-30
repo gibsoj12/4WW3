@@ -1,10 +1,19 @@
 // import "jquery";
 
 function displayMyLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(displayPosition);
-  } else {
-    x.innerHTML = "Geolocation is not supported by this browser.";
+
+  var shopName = sessionStorage.getItem("shopName");
+  if (shopName != null) {
+    console.log(shopName);
+    // Check database for the shop and then display that place etc.
+    testTables();
+  }
+  else {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(displayPosition);
+    } else {
+      x.innerHTML = "Geolocation is not supported by this browser.";
+    }
   }
 }
 
