@@ -38,6 +38,7 @@ function testTables() {
     type: "GET",
     url: 'results-page.php',
     dataType: 'json',
+    async : false,
     timeout: 20000,
     data: {functionname: 'search_with_name', arguments: []},
   
@@ -52,8 +53,11 @@ function testTables() {
             console.log(obj.error);
         }
     },
-    error: function(XMLHttpRequest, textStatus, errorThrown) {console.log('in error');}    
-  }).fail(function(jqXHR, textStatus){});
+    error: function(XMLHttpRequest, textStatus, errorThrown) {
+      console.log('in error');
+    }    
+  }).fail(function(jqXHR, textStatus){
+    console.log('in fail'); });
 }
 
 function displayPosition(position) {
