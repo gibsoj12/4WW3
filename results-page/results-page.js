@@ -41,10 +41,9 @@ function testTables() {
     data: {functionname: 'search_with_name', arguments: []},
   
     success: function (obj, textStatus) {
-        console.log ('in success');
-        if( !('error' in obj) ) {
+        if(!obj.error) {
             yourVariable = obj.result;
-            console.log(yourVariable);
+            console.log("yourvar" + yourVariable);
         }
         else {
             console.log(obj.error);
