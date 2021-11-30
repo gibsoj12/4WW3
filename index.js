@@ -3,7 +3,7 @@ function shopsNearMe() {
 }
 
 function searchName() {
-    const shopName = new FormData(document.querySelector('query'));
+    const shopName = document.getElementById('name-search').value;
     sessionStorage.setItem("shopName", shopName);
     window.location = "./results-page/results-page.html";
 }
