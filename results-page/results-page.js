@@ -37,8 +37,6 @@ function testTables() {
   $.ajax({
     type: "GET",
     url: 'results-page.php',
-    dataType: 'json',
-    // async : false,
     timeout: 20000,
     data: {functionname: 'search_with_name', arguments: []},
   
