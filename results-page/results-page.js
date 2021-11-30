@@ -38,14 +38,13 @@ function testTables() {
     type: "GET",
     url: 'results-page.php',
     dataType: 'json',
-    async : false,
+    // async : false,
     timeout: 20000,
     data: {functionname: 'search_with_name', arguments: []},
   
-    success: function (obj, textstatus) {
+    success: function (obj, textStatus) {
         console.log ('in success');
         if( !('error' in obj) ) {
-            console.log('success');
             yourVariable = obj.result;
             console.log(yourVariable);
         }
@@ -54,10 +53,10 @@ function testTables() {
         }
     },
     error: function(XMLHttpRequest, textStatus, errorThrown) {
-      console.log('in error' + errorThrown);
+      console.log('in error ' + errorThrown);
     }    
   }).fail(function(jqXHR, textStatus){
-    console.log('in fail' + textStatus); });
+    console.log('in fail ' + textStatus); });
 }
 
 function displayPosition(position) {
