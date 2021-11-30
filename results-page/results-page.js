@@ -20,13 +20,14 @@ function displayMyLocation() {
 function testTables() {
   let res = "";
   $.ajax({
-    type: "GET",
+    type: "POST",
     url: 'results-page.php',
     timeout: 20000,
     data: {functionname: 'search_with_name', arguments: []},
   
     success: function (obj) {
       var data = JSON.stringify(obj)
+      console.log(data);
         if(!obj.error) {
             res = data.response_code;
             console.log("yourvar " + res);
