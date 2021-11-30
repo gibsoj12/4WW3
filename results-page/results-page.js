@@ -3,6 +3,7 @@
 function displayMyLocation() {
 
   var shopName = sessionStorage.getItem("shopName");
+  console.log(shopName);
   if (shopName != null) {
     console.log(shopName);
     // Check database for the shop and then display that place etc.
