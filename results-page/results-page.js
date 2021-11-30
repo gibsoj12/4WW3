@@ -54,10 +54,10 @@ function testTables() {
         }
     },
     error: function(XMLHttpRequest, textStatus, errorThrown) {
-      console.log('in error');
+      console.log('in error' + errorThrown);
     }    
   }).fail(function(jqXHR, textStatus){
-    console.log('in fail'); });
+    console.log('in fail' + textStatus); });
 }
 
 function displayPosition(position) {
