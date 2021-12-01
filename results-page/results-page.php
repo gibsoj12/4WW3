@@ -5,12 +5,13 @@ include_once '../database.php';
 $database = new Database();
 $db = $database->getConnection();
 
-if($db['status'] == '0') {
+if ($db['status'] == '0') {
     die("Connection failed:" . $db['message']);
 } else {
     $conn = $db['connection'];
+    echo "conn " . $db['connection'];
     $stmt = "SELECT * FROM `users`";
-    if($conn->query($stmt) === TRUE) {
+    if ($conn->query($stmt) === TRUE) {
         $response_status = '1';
         $response_code = 200;
         $response_desc = "Query made successfully";
@@ -29,6 +30,5 @@ if($db['status'] == '0') {
 }
 
 exit();
-
 
 ?>
