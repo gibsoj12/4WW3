@@ -9,8 +9,8 @@ if ($db['status'] == '0') {
     die("Connection failed:" . $db['message']);
 } else {
     $conn = $db['connection'];
-    echo "conn " . $db['connection'];
     $stmt = "SELECT * FROM `users`";
+    echo "statment " . $conn->query($stmt);
     if ($conn->query($stmt) === TRUE) {
         $response_status = '1';
         $response_code = 200;
