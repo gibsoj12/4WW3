@@ -23,7 +23,7 @@ function testTables() {
     type: "POST",
     url: 'results-page.php',
     timeout: 20000,
-    data: {functionname: 'search_with_name', arguments: []},
+    data: {arguments: []},
   
     success: function (obj) {
       var data = JSON.stringify(obj)
