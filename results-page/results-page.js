@@ -1,46 +1,101 @@
-// import "jquery";
+var meta;
+var result;
+var myLong;
+var myLat;
 
 function displayMyLocation() {
 
   var shopName = sessionStorage.getItem("shopName");
   if (shopName != null) {
-    console.log(shopName);
     // Check database for the shop and then display that place etc.
-    testTables();
+    displayResults(shopName);
   }
   else {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(displayPosition);
+      navigator.geolocation.getCurrentPosition(getMyPosition);
     } else {
       x.innerHTML = "Geolocation is not supported by this browser.";
     }
   }
 }
 
-function testTables() {
-  let res = "";
+function displayResults(shopName) {
   $.ajax({
     type: "POST",
     url: 'results-page.php',
     timeout: 20000,
-    data: {arguments: []},
+    data: {arguments: [shopName, myLong, myLat]},
   
     success: function (obj) {
-      var data = JSON.stringify(obj)
-      console.log(data);
-        if(!obj.error) {
-            res = data.response_code;
-            console.log("yourvar " + res);
+      var data = JSON.parse(obj);
+        if (!obj.error) {
+          result = JSON.parse(data["response_data"]);
+          meta = JSON.parse(data["response_metadata"]);
+          createTable();
+
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(displayPosition);
+          } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+          }
+          console.log("Success: " + result);
         }
         else {
-            console.log(obj.error);
+          console.log(obj.error);
         }
     },
     error: function(XMLHttpRequest, textStatus, errorThrown) {
-      console.log('in error ' + errorThrown);
+      console.log('Error: ' + errorThrown);
     }    
   }).fail(function(jqXHR, textStatus){
-    console.log('in fail ' + textStatus); });
+    console.log('Fail: ' + textStatus); });
+}
+
+function createTable() {
+  const tbl = document.querySelector("table");
+  let headers = Object.keys(JSON.parse(result["0"]));
+  generateTableHead(tbl, headers);
+  generateTable(tbl);
+}
+
+function generateTableHead(tbl, headers) {
+  let thead = tbl.createTHead();
+  let row = thead.insertRow();
+  for(let key of headers) {
+    let th = document.createElement("th");
+    let text = document.createTextNode(key);
+    th.appendChild(text);
+    row.appendChild(th);
+  }
+}
+
+function generateTable(tbl) {
+  for (let i = 0; i < result.length; i++) {
+    element = JSON.parse(result[i]);
+    metadata = JSON.parse(meta[i]);
+    let row = tbl.insertRow();
+    for (key in element) {
+      let cell = row.insertCell();
+      var text;
+      if (key === "Name") {
+        text = document.createElement("a");
+        text.setAttribute("href", "../about-page/about-page.html?" + metadata["id"]);
+
+        let linkText = document.createTextNode(element[key]);
+        text.appendChild(linkText);
+      } 
+      else {  
+        text = document.createTextNode(element[key]);
+      }
+      cell.appendChild(text);
+    }
+  }
+}
+
+function getMyPosition(position) {
+  myLong = position.coords.longitude;
+  myLat = position.coords.latitude;
+  displayResults("");
 }
 
 function displayPosition(position) {
@@ -60,15 +115,11 @@ function displayPosition(position) {
     accessToken: 'pk.eyJ1IjoiZ2lic29qMTIiLCJhIjoiY2t2bDM3Z2Z6MzBnaTJvbnl6YjYyYXB5NiJ9.oUYYVzj-s5a25lh415HLQQ'
   }).addTo(my_map);
 
-  L.marker([43.262114, -79.905834]).addTo(my_map)
-    .bindPopup('Paisleys Coffeehouse and Eatery.<br><a href="../about-page/about-page.html">Paisleys review</a>')
+  for (let i = 0; i < result.length; i++) {
+    element = JSON.parse(result[i]);
+    metadata = JSON.parse(meta[i]);
+    L.marker([metadata["latitude"], metadata["longitude"]]).addTo(my_map)
+    .bindPopup(element["Name"] + '<br><a href="../about-page/about-page.html?"' + metadata["id"] + '>' + element["Name"] + '</a>')
     .openPopup();
-
-  L.marker([43.262494, -79.905428]).addTo(my_map)
-    .bindPopup('Mikel Cofee.<br><a href="https://www.mikelcoffee.com/el/home"> Mikel Coffee</a>')
-    .openPopup();
-
-  L.marker([43.262405, -79.905200]).addTo(my_map)
-    .bindPopup('Second Cup.<br><a href="https://secondcup.com/">Second Cup</a>')
-    .openPopup();
+  }
 }

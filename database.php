@@ -1,10 +1,10 @@
 <?php
 
 class Database {
-    private $host = "localhost:3306";
+    private $host = "localhost";
     private $db_name = "coffee_house";
     private $username = "root";
-    private $password = "password";
+    private $password = "";
     public $conn;
 
 
@@ -13,7 +13,7 @@ class Database {
 
         if($this->conn->connect_error) {
             $response['status'] = '0';
-            $response['message'] = $exception->getMessage();
+            $response['message'] = $this->conn->connect_error;
             return $response;
         } else {
             $response['status'] = '1';
