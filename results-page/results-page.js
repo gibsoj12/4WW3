@@ -79,7 +79,7 @@ function generateTable(tbl) {
       var text;
       if (key === "Name") {
         text = document.createElement("a");
-        text.setAttribute("href", "../about-page/about-page.html?" + metadata["id"]);
+        text.setAttribute("href", "../about-page/about-page.html?id=" + metadata["id"]);
 
         let linkText = document.createTextNode(element[key]);
         text.appendChild(linkText);
@@ -119,7 +119,7 @@ function displayPosition(position) {
     element = JSON.parse(result[i]);
     metadata = JSON.parse(meta[i]);
     L.marker([metadata["latitude"], metadata["longitude"]]).addTo(my_map)
-    .bindPopup(element["Name"] + '<br><a href="../about-page/about-page.html?"' + metadata["id"] + '>' + element["Name"] + '</a>')
+    .bindPopup(element["Name"] + '<br><a href="../about-page/about-page.html?id="' + metadata["id"] + '>' + element["Name"] + '</a>')
     .openPopup();
   }
 }

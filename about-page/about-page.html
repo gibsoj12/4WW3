@@ -27,7 +27,7 @@
             crossorigin=""/>
     </head>
 
-    <body onload="objectLocation();">
+    <body onload="displayResults();">
 
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
             integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
@@ -46,37 +46,16 @@
         <div class="clear">
             <!--Clear will mean that anything placed outside of this is no longer in a 2 column style-->
             <div class="column left">
-                <div class="container" style="background-color: #F2EDE2; padding: 5%">
-                    <div class="rating-header">Coffee</div>
-                    <div class="stars-container">
-                        <div class="Stars" style="--rating: 4.5;"></div>
-                    </div>
-                    <p>"The espresso at this coffee shop was fantastic! Perfectly balanced, I have never had a shot which was sour or bitter!"<br> <i>-Somebody with tastebuds</i></p>
-                    <p>"The espresso at this coffee shop was awful! Perfectly balanced, I have never had a shot which was sour or bitter!"<br> <i>-Somebody without tastebuds</i></p>
-                    <br>        
 
+                <div class="container" style="background-color: #F2EDE2; padding: 5%">
+                    <div id="shop-info-header" class="rating-header"></div>
+                    <div id="shop-info"></div>
                 </div><br>
 
                 <div class="container" style="background-color: #F2EDE2; padding: 5%">
-                    <div class="rating-header">Food</div>
-                    <div class="stars-container">
-                        <div class="Stars" style="--rating: 4.0;"></div>
-                    </div>
-                    <p>"The chili at this coffee shop was fantastic! Perfectly seasoned, I have never had such delicious chili!"<br> <i>-Somebody with tastebuds</i></p>
-                    <p>"The chili at this coffee shop was awful! Perfectly seasoned just like my mother used to make. I will never eat here again!"<br> <i>-Somebody without tastebuds</i></p>
-                    <br>        
-
+                    <div id="shop-reviews-header" class="rating-header"></div>
+                    <div id="shop-reviews"></div>
                 </div><br>
-
-                <div class="container" style="background-color: #F2EDE2; padding: 5%">
-                    <div class="rating-header">Atmosphere</div>
-                    <div class="stars-container">
-                        <div class="Stars" style="--rating: 4.8;"></div>
-                    </div>
-                    <p>"I love sitting and working at Paisleys while I enjoy my coffee, especially during the fall! The large windows let the sun shine in which keeps it nice and cozy!"<br> <i>-Jane Doe</i></p>
-                    <br>        
-
-                </div>
                 
             </div>
 
@@ -92,6 +71,7 @@
             <div id="object_map"></div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </body>
 
     <footer>
