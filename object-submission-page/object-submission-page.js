@@ -1,3 +1,40 @@
+function getValues() {
+  var data = {};
+
+  const name = document.getElementById('name').value;
+  data['name'] = name;
+
+  const latitude = document.getElementById('latitude').value;
+  const longitude = document.getElementById('longitude').value;
+  data['longitude'] = latitude;
+  data['latitude'] = longitude;
+
+  const url = document.getElementById('url').value;
+  data['link'] = url;
+
+  const espresso = document.getElementById('espresso').checked.toString();
+  const decaf = document.getElementById('decaf').checked.toString();
+  const food = document.getElementById('food').checked.toString();
+  const wheelchair = document.getElementById('wheelchair').checked.toString();
+  const washroom = document.getElementById('washroom').checked.toString();
+  var amenities = {"espresso" : espresso, "decaf" : decaf, "food" : food, 
+                  "accessible entrance" : wheelchair, "washroom" : washroom};
+  data['amenities'] = JSON.stringify(amenities);
+
+  $.ajax({
+    type: "POST",
+    url: 'object-submission-page.php',
+    timeout: 20000,
+    data: {arguments: JSON.stringify(data)},
+    dataType: 'json'})
+  .done(function(ret) {
+    console.log('Success ', ret);
+  }) 
+  .fail(function(textStatus) {
+    console.log('Fail: ', textStatus['responseText']); 
+  });
+}
+
 function displayMyLocation() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(displayPosition);

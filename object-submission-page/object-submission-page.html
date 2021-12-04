@@ -62,8 +62,11 @@
 			<label for="name" aria-placeholder="Name"></label><br>
 			<input type="text" id="name" name="name" placeholder="Name of Coffee Shop" style="width: 40%;" required><br>
 			
-			<label for="location" aria-placeholder="Location"></label><br>
-			<input type="text" id="location" name="location" placeholder="Location (your current coordinates will show on map)" style="width: 40%;" required><br>
+			<label for="latitude" aria-placeholder="latitude"></label><br>
+			<input type="text" id="latitude" name="latitude" placeholder="Latitude (your current coordinates will show on map)" style="width: 40%;" required><br>
+
+            <label for="longitude" aria-placeholder="longitude"></label><br>
+			<input type="text" id="longitude" name="longitude" placeholder="Longitude (your current coordinates will show on map)" style="width: 40%;" required><br>
         
 			<label for="url" aria-placeholder="Website"></label><br>
 			<input type="url" id="url" name="url" placeholder="Link to website" style="width: 40%;" optional><br>
@@ -79,14 +82,11 @@
         
         <!--- Creates set of checkboxes for user to click --->
         <!--Box is red if input is invalid-->
-		<input type="checkbox" id="espresso" name="espresso" value="Espresso">
+		<input type="checkbox" id="espresso" name="espresso">
 		<label for="espresso">Espresso</label><br>
         
-		<input type="checkbox" id="decaf" name="decaf" value="Decaf">
+		<input type="checkbox" id="decaf" name="decaf">
 		<label for="decaf">Decaf</label><br>
-        
-		<input type="checkbox" id="coldbrew" name="coldbrew" value="Cold Brew">
-		<label for="coldbrew">Cold Brew</label><br>
         
 		<input type="checkbox" id="food" name="food" value="Foor service">
 		<label for="food">Food service</label><br>
@@ -110,7 +110,7 @@
 
         <br>
         <!--- Form submit button --->
-		<button class="form-submit" type="button">Add Coffee Shop</button> 
+		<button class="form-submit" type="button" onclick="getValues();">Add Coffee Shop</button> 
 		<br>
 	</div>
     <div class="container">
@@ -120,6 +120,7 @@
 
 <!--- Bootstrap style --->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 
 <!--- Sample footer --->
