@@ -2,13 +2,6 @@
 
 include_once '../database.php';
 
-if(!isset($_COOKIE['user'])) {
-    $response_status = '2';
-    $response_code = 403;
-    $response_data = "Failure: Please sign in";
-    exit();
-}
-
 $database = new Database();
 $db = $database->getConnection();
 
@@ -19,13 +12,13 @@ if ($_POST['arguments'] != null) {
         die("Connection failed: " . $db['message']);
     } else {
         $conn = $db['connection'];
-        $name = mysqli_real_escape_string($conn, $args['name']);
-        $lat = mysqli_real_escape_string($conn, $args['latitude']);
-        $long = mysqli_real_escape_string($conn, $args['longitude']);
-        $link = mysqli_real_escape_string($conn, $args['link']);
-        $amenities = $args['amenities'];
-        $vals = "'" . $name . "','" . $link . "','" . $lat . "','" . $long . "','" . $amenities . "'";
-        $stmt = "INSERT INTO `coffee_shops` (`id`, `name`, `link`, `latitude`, `longitude`, `amenities`) VALUES (NULL," . $vals . ")";
+        $first_name = mysqli_real_escape_string($conn, $args['first_name']);
+        $last_name = mysqli_real_escape_string($conn, $args['last_name']);
+        $birthday = mysqli_real_escape_string($conn, $args['birthday']);
+        $email = mysqli_real_escape_string($conn, $args['email']);
+        $password = mysqli_real_escape_string($conn, $args['password']);
+        $vals = "'" . $first_name . "','" . $last_name . "','" . $birthday . "','" . $email . "','" . $password . "'";
+        $stmt = "INSERT INTO `users` (`first_name`, `last_name`, `birthday`, `email`, `password`) VALUES (" . $vals . ")";
         
         if ($conn->connect_error) {
             $response_status = '2';
