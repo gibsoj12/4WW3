@@ -7,7 +7,7 @@ Member 1: Jessica de Leeuw
 Member 2: Jeff Gibson
 
 IP Address: 3.21.69.46
-Website: jessica-dl.github.io
+Website: www.jeffgibson.live
 
 JS validation for user registration is in user-registration-page/user-registration-page.js
 
