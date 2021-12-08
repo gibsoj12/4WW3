@@ -53,6 +53,19 @@ function displayAbout(shop_data) {
   }
 }
 
+function displayReviews(review_data) {
+  document.getElementById("shop-reviews-header").innerText = "Reviews \n\n";
+
+  for (review in review_data) {
+    rev = JSON.parse(review_data[review]);
+    for (val in rev) {
+      if (val === "review") {
+        document.getElementById("shop-reviews").innerText += rev[val] + "\n\n";
+      }
+    }
+  }
+}
+
 function submitReview() {
   var data = {};
 
@@ -80,19 +93,6 @@ function submitReview() {
     setTimeout(() => { alert_div.style.display = "none" }, 3000);
     console.log('Fail: ', textStatus['responseText']); 
   });
-}
-
-function displayReviews(review_data) {
-  document.getElementById("shop-reviews-header").innerText = "Reviews \n\n";
-
-  for (review in review_data) {
-    rev = JSON.parse(review_data[review]);
-    for (val in rev) {
-      if (val === "review") {
-        document.getElementById("shop-reviews").innerText += rev[val] + "\n\n";
-      }
-    }
-  }
 }
 
 function getID() {

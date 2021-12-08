@@ -6,6 +6,7 @@ if(!isset($_COOKIE['user'])) {
     $response_status = '2';
     $response_code = 403;
     $response_data = "Failure: Please sign in";
+    echo json_encode($response);
     exit();
 }
 
