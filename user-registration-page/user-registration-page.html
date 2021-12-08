@@ -37,6 +37,7 @@
         <a href="../index.html">Home</a>
         <a href="user-registration-page.html#signin" style="float: right;">Sign in</a>
         <a class="active" href="user-registration-page.html#signup" style="float: right;">Sign up</a>
+		<a href="user-registration-page.html#signout" style="float: right;">Sign out</a>
       </div>
 	</div>
 
@@ -100,7 +101,7 @@
 		  </form> 
 		  <br>
 
-		<!--- Button for user to submit form, does not do anyting as of now --->
+		<!--- Button for user to submit form --->
 		<button class="form-submit" type="button" onclick="validateSignIn();">Sign in</button> 
 		<br>
 
@@ -108,6 +109,20 @@
 			<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
 			Please fill out the required fields.
 		</div> 
+	</div>
+
+	<br>
+
+	<!--- Styled container --->
+	<div class="container" id="signout">
+		<!--- Heading in container --->
+		<h2>
+			Sign out
+		</h2>
+
+		<!--- Button for user to submit form --->
+		<button class="form-submit" type="button" onclick="signOut();">Sign out</button> 
+		<br>
 	</div>
 
  <!--- For bootstrap --->

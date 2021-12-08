@@ -84,6 +84,16 @@ function generateTable(tbl) {
         let linkText = document.createTextNode(element[key]);
         text.appendChild(linkText);
       } 
+      else if (key === "Amenities") {
+        amens = "\n";
+        amenities = JSON.parse(element[key])
+        for (amenity in amenities) {
+          if (amenities[amenity] === "true") {
+            amens += amenity + ", ";
+          }
+        }
+        text = document.createTextNode(amens);
+      } 
       else {  
         text = document.createTextNode(element[key]);
       }

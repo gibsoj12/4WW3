@@ -44,13 +44,38 @@ function displayAbout(shop_data) {
       text = ""
       amenities = JSON.parse(shop_data[val])
       for (amenity in amenities) {
-        if (amenities[amenity] === "yes") {
-          text += amenity;
+        if (amenities[amenity] === "true") {
+          text += amenity + ", ";
         }
       }
       document.getElementById("shop-info").innerText += "Amenities: " + text + "\n\n";
     }
   }
+}
+
+function submitReview() {
+  var data = {};
+
+  data['shop_id'] = getID();
+
+  const stars = document.getElementById('stars').value;
+  data['stars'] = stars;
+
+  const review = document.getElementById('about').value;
+  data['review'] = review;
+
+  $.ajax({
+    type: "POST",
+    url: 'about-page-review.php',
+    timeout: 20000,
+    data: {arguments: JSON.stringify(data)},
+    dataType: 'json'})
+  .done(function(ret) {
+    console.log('Success ', ret);
+  }) 
+  .fail(function(textStatus) {
+    console.log('Fail: ', textStatus['responseText']); 
+  });
 }
 
 function displayReviews(review_data) {

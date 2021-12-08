@@ -6,8 +6,8 @@ function getValues() {
 
   const latitude = document.getElementById('latitude').value;
   const longitude = document.getElementById('longitude').value;
-  data['longitude'] = latitude;
-  data['latitude'] = longitude;
+  data['longitude'] = longitude;
+  data['latitude'] = latitude;
 
   const url = document.getElementById('url').value;
   data['link'] = url;
@@ -29,6 +29,7 @@ function getValues() {
     dataType: 'json'})
   .done(function(ret) {
     console.log('Success ', ret);
+    window.location = "../index.html";
   }) 
   .fail(function(textStatus) {
     console.log('Fail: ', textStatus['responseText']); 

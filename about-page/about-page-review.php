@@ -19,13 +19,11 @@ if ($_POST['arguments'] != null) {
         die("Connection failed: " . $db['message']);
     } else {
         $conn = $db['connection'];
-        $name = mysqli_real_escape_string($conn, $args['name']);
-        $long = mysqli_real_escape_string($conn, $args['longitude']);
-        $lat = mysqli_real_escape_string($conn, $args['latitude']);
-        $link = mysqli_real_escape_string($conn, $args['link']);
-        $amenities = $args['amenities'];
-        $vals = "'" . $name . "','" . $link . "','" . $long . "','" . $lat . "','" . $amenities . "'";
-        $stmt = "INSERT INTO `coffee_shops` (`id`, `name`, `link`, `longitude`, `latitude`, `amenities`) VALUES (NULL," . $vals . ")";
+        $id = mysqli_real_escape_string($conn, $args['shop_id']);
+        $stars = mysqli_real_escape_string($conn, $args['stars']);
+        $review = mysqli_real_escape_string($conn, $args['review']);
+        $vals = "'" . $id . "','" . $stars . "','" . $review . "'";
+        $stmt = "INSERT INTO `reviews` (`shop_id`, `stars`, `review`) VALUES (" . $vals . ")";
         
         if ($conn->connect_error) {
             $response_status = '2';

@@ -41,6 +41,7 @@
                 <a href="../object-submission-page/object-submission-page.html">Add a Location</a>
                 <a href="../user-registration-page/user-registration-page.html#signin" style="float: right;">Sign in</a>
                 <a href="../user-registration-page/user-registration-page.html#signup" style="float: right;">Sign up</a>
+                <a href="../user-registration-page/user-registration-page.html#signout" style="float: right;">Sign out</a>
               </div>
         </div>
         <div class="clear">
@@ -65,6 +66,21 @@
                 <img src="assets/chili.jpg" alt="Bowl of chili">
                 <img src="assets/atmosphere.jpg" alt="Inside of Paisley">
             </div>
+        </div>
+        <div class="container">
+            <form>
+                <label for="stars" aria-placeholder="Stars"></label><br>
+			    <input type="text" id="stars" name="stars" placeholder="Rating out of 5" required><br>
+            </form>
+            <form>
+                <label for="about" aria-placeholder="About"></label><br>
+			    <input type="text" id="about" name="about" placeholder="A blurb about this location" required><br>
+            </form>
+
+            <br>
+            <!--- Form submit button --->
+		    <button class="form-submit" type="button" onclick="submitReview();">Submit Review</button> 
+		    <br>
         </div>
         <!--This map is not in the 2 column style since it is now below the clear div-->
         <div class="container">

@@ -30,8 +30,6 @@ if ($db['status'] == '0') {
         $cookie_name = "user";
         $cookie_value = $row['id'];
         setcookie($cookie_name, $cookie_value, time() + 86400, "/");
-
-
     } else {
         $response_status = '2';
         $response_code = 400;

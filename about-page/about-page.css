@@ -21,3 +21,21 @@
   border-radius: 20px;
   height: 500px;
 }
+
+/* Custom form submit for submit button */
+.form-submit {
+  display: inline-block;
+  background: #345995;
+  color: #fff;
+  border-bottom: none;
+  width: auto;
+  padding: 15px 40px;
+  border-radius: 5px;
+  margin-top: 1%;
+  cursor: pointer;
+}
+
+/* Custom styling for hovering over submit button */
+.form-submit:hover {
+  background: #8acdea;
+}

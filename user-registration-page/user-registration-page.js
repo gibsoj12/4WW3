@@ -28,6 +28,7 @@ function validateSignUp() {
       dataType: 'json'})
     .done(function(ret) {
       console.log('Success ', ret);
+      window.location = "../index.html";
     }) 
     .fail(function(textStatus) {
       console.log('Fail: ', textStatus['responseText']); 
@@ -118,7 +119,6 @@ function validateSignIn() {
   
   const password = document.getElementById('pass').value;
   formData['password'] = password;
-  success = false;
 
   if (validateSignInForm()) {
     $.ajax({
@@ -132,8 +132,8 @@ function validateSignIn() {
         console.log(obj);
         response = obj['response_data'];
         if (response['password'] === password) {
-          success = true;
           console.log('Success ', obj);
+          window.location = "../index.html";
         } 
         else {
           let alert_div = document.getElementById("signin-alert");
@@ -189,4 +189,28 @@ function validateSignInForm() {
     }
 
   return true;
+}
+
+function signOut() {
+  if (validateSignInForm()) {
+    $.ajax({
+      type: "POST",
+      url: 'user-registration-page-logout.php',
+      timeout: 20000,
+      data: {arguments: email},
+      dataType: 'json' })
+    .done(function(obj) {
+      if (!obj.error) {
+        console.log(obj);
+        response = obj['response_data'];
+        console.log('Password is incorrect');
+      } else {
+        console.log('Error ', obj.error);
+      }
+        
+    }) 
+    .fail(function(textStatus) {
+      console.log('Fail: ', textStatus['responseText']); 
+    });
+  }
 }
