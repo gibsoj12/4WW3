@@ -203,7 +203,6 @@ function signOut() {
       if (!obj.error) {
         console.log(obj);
         response = obj['response_data'];
-        console.log('Password is incorrect');
       } else {
         console.log('Error ', obj.error);
       }
