@@ -192,8 +192,7 @@ function validateSignInForm() {
 }
 
 function signOut() {
-  if (validateSignInForm()) {
-    $.ajax({
+  $.ajax({
       type: "POST",
       url: 'user-registration-page-logout.php',
       timeout: 20000,
@@ -210,6 +209,5 @@ function signOut() {
     }) 
     .fail(function(textStatus) {
       console.log('Fail: ', textStatus['responseText']); 
-    });
-  }
+  });
 }
