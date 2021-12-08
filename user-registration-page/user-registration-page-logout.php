@@ -1,4 +1,5 @@
 <?php
+
 $cookie_name = "user";
 $cookie_value = $row['id'];
 if (isset($_COOKIE['user'])) {

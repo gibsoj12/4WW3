@@ -192,22 +192,22 @@ function validateSignInForm() {
 }
 
 function signOut() {
+
   $.ajax({
-      type: "POST",
-      url: 'user-registration-page-logout.php',
-      timeout: 20000,
-      data: {arguments: email},
-      dataType: 'json' })
-    .done(function(obj) {
-      if (!obj.error) {
-        console.log(obj);
-        response = obj['response_data'];
-      } else {
-        console.log('Error ', obj.error);
-      }
-        
-    }) 
-    .fail(function(textStatus) {
-      console.log('Fail: ', textStatus['responseText']); 
+    type: "POST",
+    url: 'user-registration-page-logout.php',
+    timeout: 20000,
+    data: {} })
+  .done(function(obj) {
+    if (!obj.error) {
+      console.log(obj);
+      response = obj['response_data'];
+    } else {
+      console.log('Error ', obj.error);
+    }
+      
+  }) 
+  .fail(function(textStatus) {
+    console.log('Fail: ', textStatus['responseText']); 
   });
 }
