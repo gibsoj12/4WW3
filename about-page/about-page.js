@@ -86,7 +86,7 @@ function submitReview() {
   .done(function(ret) {
     let alert_div = document.getElementById("alert-div");
     alert_div.style.display = "block";
-    alert_div.innerHTML = "Please log in to add a shop"
+    alert_div.innerHTML = "Please log in to submit a review"
     setTimeout(() => { alert_div.style.display = "none" }, 3000);
     console.log('Success ', ret);
   }) 
