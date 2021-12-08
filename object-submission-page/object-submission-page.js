@@ -32,6 +32,9 @@ function getValues() {
     window.location = "../index.html";
   }) 
   .fail(function(textStatus) {
+      alert_div.style.display = "block";
+      alert_div.innerHTML = "Please log in to add a shop"
+      setTimeout(() => { alert_div.style.display = "none" }, 3000);
     console.log('Fail: ', textStatus['responseText']); 
   });
 }
